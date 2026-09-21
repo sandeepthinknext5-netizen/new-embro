@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bedroom Collection — Embroshyal Private Limited</title>
+<meta name="description" content="Premium bedroom furniture — platform beds, wardrobes, dressers, bedside tables. Designed in-house, crafted by master specialists.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;}
+body{margin:0;background:#FBF9F6;color:#1B1917;font-family:'Inter',system-ui,-apple-system,sans-serif;font-size:16.5px;line-height:1.72;font-weight:350;-webkit-font-smoothing:antialiased;overflow-x:hidden;}
+img{max-width:100%;display:block;}
+a{color:inherit;text-decoration:none;}
+button{font:inherit;color:inherit;border:0;background:none;cursor:pointer;}
+h1,h2,h3,h4,h5{margin:0;font-family:'Fraunces',Georgia,serif;font-weight:350;letter-spacing:-.022em;line-height:1.1;}
+p{margin:0;}ul{margin:0;padding:0;list-style:none;}
+::selection{background:#1B1917;color:#FBF9F6;}
+.container{width:100%;max-width:1320px;margin:0 auto;padding:0 clamp(20px,5vw,68px);}
+.section{padding:clamp(80px,9vw,130px) 0;position:relative;}
+.section-sand{background:#F2EDE6;}
+.section-head{max-width:790px;}
+.section-head.center{margin:0 auto clamp(44px,5.5vw,72px);text-align:center;}
+.section-head.center .eyebrow{justify-content:center;}
+.section-head .h2{margin:22px 0 22px;}
+.eyebrow{font-size:.715rem;letter-spacing:.26em;text-transform:uppercase;color:#8B8177;font-weight:500;display:inline-flex;align-items:center;gap:.75rem;}
+.eyebrow::before{content:"";width:32px;height:1px;background:#C4B8A9;display:inline-block;}
+.eyebrow-light{color:rgba(255,255,255,.82);} .eyebrow-light::before{background:rgba(255,255,255,.55);}
+.h2{font-size:clamp(2.15rem,4.6vw,3.85rem);line-height:1.08;}
+.h3{font-size:clamp(1.35rem,2.2vw,1.75rem);}
+.lead{font-size:clamp(1.06rem,1.55vw,1.28rem);line-height:1.78;color:#5C554C;font-weight:300;}
+.muted{color:#7B7267;}
+.reveal{opacity:0;transform:translateY(30px);transition:opacity 1s cubic-bezier(.16,1,.3,1),transform 1s cubic-bezier(.16,1,.3,1);transition-delay:var(--d,0s);}
+.reveal.in{opacity:1;transform:none;}
+.split .word{display:inline-block;overflow:hidden;vertical-align:bottom;padding-bottom:.12em;margin-bottom:-.12em;}
+.split .word i{display:inline-block;font-style:inherit;transform:translateY(112%);opacity:0;transition:transform 1.05s cubic-bezier(.16,1,.3,1),opacity .9s ease;transition-delay:var(--d,0s);}
+.split.in .word i{transform:translateY(0);opacity:1;}
+.mask{position:relative;overflow:hidden;}
+.mask img{transform:scale(1.16);transition:transform 1.5s cubic-bezier(.16,1,.3,1);}
+.mask::after{content:"";position:absolute;inset:0;background:#F2EDE6;transform-origin:bottom;transition:transform 1.15s cubic-bezier(.76,0,.24,1);z-index:2;}
+.mask.in img{transform:scale(1);} .mask.in::after{transform:scaleY(0);}
+.btn{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:.75rem;padding:1.02rem 2.15rem;border-radius:999px;font-size:.775rem;letter-spacing:.155em;text-transform:uppercase;font-weight:500;overflow:hidden;isolation:isolate;transition:color .55s,transform .55s,border-color .5s;white-space:nowrap;}
+.btn-sm{padding:.85rem 1.65rem;font-size:.715rem;}
+.btn-dark{background:#1B1917;color:#FBF9F6;}
+.btn-dark::before{content:"";position:absolute;inset:0;background:#A2714E;transform:translateY(101%);transition:transform .6s cubic-bezier(.16,1,.3,1);z-index:-1;}
+.btn-dark:hover::before{transform:translateY(0);}
+.btn-light{background:#FBF9F6;color:#1B1917;}
+.btn-light::before{content:"";position:absolute;inset:0;background:#A2714E;transform:translateY(101%);transition:transform .6s cubic-bezier(.16,1,.3,1);z-index:-1;}
+.btn-light:hover{color:#FBF9F6;} .btn-light:hover::before{transform:translateY(0);}
+.btn-outline{border:1px solid rgba(27,25,23,.22);color:#1B1917;background:transparent;}
+.btn-outline::before{content:"";position:absolute;inset:0;background:#1B1917;transform:translateY(101%);transition:transform .6s cubic-bezier(.16,1,.3,1);z-index:-1;}
+.btn-outline:hover{color:#FBF9F6;border-color:#1B1917;} .btn-outline:hover::before{transform:translateY(0);}
+.btn .arw{width:15px;height:15px;transition:transform .5s cubic-bezier(.16,1,.3,1);} .btn:hover .arw{transform:translateX(5px);}
+
+/* TOPBAR */
+.topbar{background:#FFFFFF;border-bottom:1px solid rgba(27,25,23,.08);position:relative;z-index:122;}
+.topbar-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:56px;padding:8px 0;}
+.mode-switch{display:flex;align-items:center;background:#F2EDE6;border-radius:999px;padding:4px;gap:2px;flex:none;}
+.mode-switch button{padding:.58rem 1.15rem;border-radius:999px;font-size:.71rem;letter-spacing:.14em;text-transform:uppercase;font-weight:600;transition:all .38s;color:#7B7267;}
+.mode-switch button.active{background:#1B1917;color:#FBF9F6;box-shadow:0 4px 16px -6px rgba(27,25,23,.4);}
+.mode-switch button:hover:not(.active){color:#1B1917;}
+.topbar-links{display:flex;gap:clamp(14px,2.2vw,26px);align-items:center;margin-left:24px;}
+.topbar-links a{font-size:.70rem;letter-spacing:.14em;text-transform:uppercase;font-weight:500;color:#6B6359;position:relative;transition:color .35s;}
+.topbar-links a:hover{color:#1B1917;}
+.topbar-links a.hl{color:#A2714E;font-weight:600;}
+.topbar-links a.hl::after{content:"";position:absolute;left:0;right:0;bottom:-4px;height:1px;background:#A2714E;transform:scaleX(0);transition:transform .4s;}
+.topbar-links a.hl:hover::after{transform:scaleX(1);}
+.topbar-right{display:flex;align-items:center;gap:18px;margin-left:auto;}
+.topbar-right a{font-size:.76rem;color:#4A443C;display:flex;align-items:center;gap:7px;transition:color .3s;}
+.topbar-right a:hover{color:#A2714E;}
+.tb-sep{width:1px;height:14px;background:rgba(27,25,23,.14);}
+
+/* HEADER */
+.site-header{position:sticky;top:0;z-index:120;background:rgba(251,249,246,.94);backdrop-filter:blur(20px) saturate(1.25);-webkit-backdrop-filter:blur(20px) saturate(1.25);border-bottom:1px solid rgba(27,25,23,.08);transition:box-shadow .5s,background .4s;}
+.site-header.scrolled{box-shadow:0 12px 40px -18px rgba(27,25,23,.18);background:rgba(251,249,246,.98);}
+.header-inner{position:relative;display:flex;align-items:center;justify-content:space-between;gap:18px;min-height:78px;}
+.brand{display:flex;align-items:center;gap:.85rem;flex:none;z-index:2;}
+.brand-mark{width:42px;height:42px;border-radius:50%;background:#1B1917;color:#FBF9F6;display:grid;place-items:center;font-family:'Fraunces',serif;font-size:1.18rem;transition:transform .7s,background .5s;}
+.brand:hover .brand-mark{transform:rotate(-12deg);background:#A2714E;}
+.brand-text{display:flex;flex-direction:column;line-height:1.12;}
+.brand-name{font-family:'Fraunces',serif;font-size:1.12rem;letter-spacing:.012em;}
+.brand-sub{font-size:.575rem;letter-spacing:.31em;text-transform:uppercase;color:#96897B;}
+.main-nav{display:flex;align-items:center;justify-content:center;gap:2px;flex:1;position:static;}
+.nav-item{position:static;}
+.nav-link{position:relative;font-size:.71rem;letter-spacing:.09em;font-weight:500;color:#4A443C;padding:28px 12px;display:inline-flex;align-items:center;gap:5px;transition:color .35s;white-space:nowrap;text-transform:uppercase;}
+.nav-link .chev{width:10px;height:10px;opacity:.55;transition:transform .4s,opacity .3s;flex:none;}
+.nav-item:hover .nav-link .chev{transform:rotate(180deg);opacity:1;}
+.nav-link::after{content:"";position:absolute;left:12px;right:12px;bottom:20px;height:1.5px;background:#A2714E;transform:scaleX(0);transform-origin:right;transition:transform .5s;}
+.nav-item:hover .nav-link,.nav-link:hover{color:#1B1917;}
+.nav-item:hover .nav-link::after,.nav-link:hover::after{transform:scaleX(1);transform-origin:left;}
+.nav-link-all{font-weight:600;color:#1B1917;letter-spacing:.1em;}
+.nav-link.active-page{color:#A2714E;}
+.nav-link.active-page::after{transform:scaleX(1);transform-origin:left;background:#A2714E;}
+.header-actions{display:flex;align-items:center;gap:14px;flex:none;z-index:2;}
+.header-phone{display:flex;align-items:center;gap:8px;font-size:.8rem;color:#4A443C;transition:color .35s;white-space:nowrap;}
+.header-phone:hover{color:#A2714E;}
+.menu-toggle{display:none;width:46px;height:46px;border-radius:50%;border:1px solid rgba(27,25,23,.18);align-items:center;justify-content:center;flex-direction:column;gap:5px;}
+.menu-toggle span{width:17px;height:1.5px;background:#1B1917;transition:transform .45s,opacity .3s;}
+.menu-toggle.open span:nth-child(1){transform:translateY(3.25px) rotate(45deg);} .menu-toggle.open span:nth-child(2){transform:translateY(-3.25px) rotate(-45deg);}
+.scroll-progress{position:absolute;left:0;bottom:-1px;height:2px;background:#A2714E;width:100%;transform:scaleX(0);transform-origin:left;transition:transform .12s linear;z-index:3;}
+
+/* Drawer */
+.drawer{position:fixed;inset:0;background:#FBF9F6;z-index:110;transform:translateX(100%);transition:transform .72s cubic-bezier(.76,0,.24,1);visibility:hidden;}
+.drawer.open{transform:translateX(0);visibility:visible;}
+.drawer-scroll{height:100%;overflow-y:auto;padding:112px clamp(22px,7vw,52px) 40px;display:flex;flex-direction:column;}
+.drawer .mode-switch{margin-bottom:28px;align-self:flex-start;}
+.drawer nav{display:flex;flex-direction:column;}
+.drawer nav a.drawer-small{font-family:'Inter',sans-serif;font-size:.86rem;letter-spacing:.15em;text-transform:uppercase;color:#8B8177;padding:.7em 0;border-bottom:1px solid rgba(27,25,23,.09);}
+.drawer-foot{margin-top:auto;padding-top:36px;display:flex;flex-direction:column;gap:16px;}
+
+/* HERO */
+.br-hero{position:relative;min-height:92vh;display:flex;align-items:flex-end;overflow:hidden;}
+.br-hero-bg{position:absolute;inset:0;}
+.br-hero-bg img{width:100%;height:100%;object-fit:cover;}
+.br-hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,18,16,.2) 0%,rgba(20,18,16,.1) 30%,rgba(20,18,16,.65) 100%);}
+.br-hero-content{position:relative;z-index:2;color:#fff;width:100%;padding:0 0 clamp(60px,8vw,100px);}
+.br-hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:clamp(28px,4vw,72px);align-items:end;}
+.br-hero-eyebrow{display:flex;align-items:center;gap:12px;margin-bottom:18px;}
+.br-hero-eyebrow span{font-size:.69rem;letter-spacing:.22em;text-transform:uppercase;opacity:.85;}
+.br-hero-eyebrow .sep{width:1px;height:14px;background:rgba(255,255,255,.4);}
+.br-hero-title{font-family:'Fraunces',serif;font-size:clamp(2.6rem,6.5vw,5.8rem);line-height:.96;letter-spacing:-.03em;margin-bottom:20px;}
+.br-hero-title .accent{color:#E3C4A0;font-style:italic;}
+.br-hero-desc{font-size:clamp(1rem,1.5vw,1.18rem);line-height:1.8;color:rgba(255,255,255,.82);max-width:48ch;}
+.br-hero-stats{display:flex;gap:clamp(32px,4vw,56px);margin-top:42px;padding-top:28px;border-top:1px solid rgba(255,255,255,.22);}
+.br-hero-stats .stat-item .num{font-family:'Fraunces',serif;font-size:clamp(1.8rem,3vw,2.6rem);line-height:1;}
+.br-hero-stats .stat-item .lbl{font-size:.71rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.7);margin-top:8px;}
+.br-hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:38px;}
+
+/* Collection filter */
+.collection-bar{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:18px;padding:clamp(28px,4vw,42px) 0;}
+.filter-tabs{display:flex;gap:6px;flex-wrap:wrap;}
+.filter-tab{padding:.6rem 1.35rem;border-radius:999px;font-size:.715rem;letter-spacing:.14em;text-transform:uppercase;font-weight:500;color:#7B7267;border:1px solid rgba(27,25,23,.12);transition:all .4s;}
+.filter-tab:hover,.filter-tab.active{background:#1B1917;color:#FBF9F6;border-color:#1B1917;}
+.collection-count{font-size:.82rem;color:#8B8177;}
+
+/* Product grid */
+.product-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(16px,2vw,24px);}
+.product-card{background:#fff;border-radius:12px;overflow:hidden;border:1px solid rgba(27,25,23,.07);transition:transform .55s,box-shadow .55s;cursor:pointer;}
+.product-card:hover{transform:translateY(-9px);box-shadow:0 34px 64px -28px rgba(27,25,23,.3);}
+.pc-media{position:relative;aspect-ratio:1/1.02;overflow:hidden;}
+.pc-media img{width:100%;height:100%;object-fit:cover;transition:transform .95s;} .product-card:hover .pc-media img{transform:scale(1.08);}
+.pc-badge{position:absolute;top:14px;left:14px;background:rgba(251,249,246,.95);font-size:.655rem;letter-spacing:.16em;text-transform:uppercase;padding:.5em 1.05em;border-radius:999px;color:#1B1917;font-weight:500;}
+.pc-badge.gold{background:#A2714E;color:#fff;}
+.pc-quick{position:absolute;left:12px;right:12px;bottom:12px;background:rgba(251,249,246,.95);padding:.9em;border-radius:9px;font-size:.705rem;letter-spacing:.17em;text-transform:uppercase;font-weight:500;opacity:0;transform:translateY(14px);transition:opacity .5s,transform .55s;text-align:center;}
+.product-card:hover .pc-quick{opacity:1;transform:translateY(0);}
+.pc-info{padding:19px 19px 23px;}
+.pc-cat{font-size:.675rem;letter-spacing:.19em;text-transform:uppercase;color:#96897B;}
+.pc-info h4{font-size:1.12rem;margin:9px 0 11px;}
+.pc-price{font-size:1rem;font-weight:500;display:flex;align-items:baseline;gap:9px;}
+.pc-price s{color:#B0A697;font-weight:300;font-size:.86rem;}
+
+/* Featured Collections */
+.fc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(16px,2vw,24px);}
+.fc-card{position:relative;border-radius:14px;overflow:hidden;aspect-ratio:1/1.18;display:block;}
+.fc-card img{width:100%;height:100%;object-fit:cover;transition:transform 1.1s;}
+.fc-card:hover img{transform:scale(1.07);}
+.fc-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,18,16,0) 35%,rgba(20,18,16,.75));}
+.fc-info{position:absolute;left:clamp(20px,2.5vw,30px);right:clamp(20px,2.5vw,30px);bottom:clamp(20px,2.5vw,30px);color:#fff;}
+.fc-info h3{font-size:clamp(1.4rem,2.2vw,1.9rem);margin-bottom:8px;}
+.fc-info p{font-size:.88rem;color:rgba(255,255,255,.78);line-height:1.6;max-width:32ch;}
+.fc-link{font-size:.705rem;letter-spacing:.19em;text-transform:uppercase;opacity:.88;display:inline-flex;gap:9px;align-items:center;margin-top:14px;transition:gap .45s;}
+.fc-card:hover .fc-link{gap:15px;}
+
+/* Inspiration Gallery */
+.inspo-grid{display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:auto auto;gap:clamp(16px,2vw,24px);}
+.inspo-item{position:relative;border-radius:12px;overflow:hidden;aspect-ratio:1/1.1;}
+.inspo-item.tall{grid-row:span 2;aspect-ratio:auto;}
+.inspo-item img{width:100%;height:100%;object-fit:cover;transition:transform 1.1s;}
+.inspo-item:hover img{transform:scale(1.06);}
+.inspo-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,18,16,0) 40%,rgba(20,18,16,.65));opacity:0;transition:opacity .5s;}
+.inspo-item:hover .inspo-overlay{opacity:1;}
+.inspo-info{position:absolute;bottom:0;left:0;right:0;padding:clamp(16px,2vw,24px);color:#fff;transform:translateY(12px);opacity:0;transition:all .5s;}
+.inspo-item:hover .inspo-info{transform:translateY(0);opacity:1;}
+.inspo-info h4{font-size:1.15rem;} .inspo-info p{font-size:.82rem;color:rgba(255,255,255,.78);margin-top:4px;}
+
+/* Materials */
+.mat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(16px,2vw,24px);}
+.mat-card{background:#fff;border-radius:12px;padding:clamp(24px,3vw,36px);border:1px solid rgba(27,25,23,.07);transition:transform .5s,box-shadow .5s;text-align:center;}
+.mat-card:hover{transform:translateY(-6px);box-shadow:0 24px 48px -28px rgba(27,25,23,.22);}
+.mat-swatch{width:64px;height:64px;border-radius:50%;margin:0 auto 18px;border:2px solid rgba(27,25,23,.08);}
+.mat-card h4{font-size:1.05rem;margin-bottom:6px;}
+.mat-card p{font-size:.86rem;color:#7B7267;line-height:1.6;}
+
+/* Design Process */
+.dp-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(20px,3vw,40px);counter-reset:dp;}
+.dp-item{counter-increment:dp;position:relative;padding-top:32px;}
+.dp-item::before{content:counter(dp,decimal-leading-zero);font-family:'Fraunces',serif;font-size:2.8rem;color:#E8DDD0;line-height:1;display:block;margin-bottom:16px;}
+.dp-item h4{font-size:1.15rem;margin-bottom:8px;}
+.dp-item p{font-size:.9rem;color:#7B7267;line-height:1.7;}
+.dp-item::after{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#A2714E,transparent);}
+
+/* Testimonials */
+.testi-card{display:grid;grid-template-columns:auto 1fr;gap:clamp(22px,3.6vw,52px);align-items:center;background:#fff;border-radius:18px;padding:clamp(28px,4vw,52px);box-shadow:0 44px 96px -42px rgba(27,25,23,.18);}
+.testi-card .avatar{width:clamp(82px,10vw,122px);height:clamp(82px,10vw,122px);border-radius:50%;overflow:hidden;flex:none;}
+.testi-card .avatar img{width:100%;height:100%;object-fit:cover;}
+.testi-quote{font-family:'Fraunces',serif;font-size:clamp(1.2rem,2.3vw,1.85rem);line-height:1.5;font-weight:300;letter-spacing:-.015em;}
+.testi-person{margin-top:22px;display:flex;align-items:center;gap:13px;}
+.testi-person .line{width:34px;height:1px;background:#C4B8A9;}
+.testi-person strong{font-weight:500;font-size:.925rem;}
+.testi-person span{font-size:.795rem;color:#8B8177;letter-spacing:.115em;text-transform:uppercase;}
+.testi-nav{display:flex;align-items:center;gap:12px;margin-top:clamp(28px,4vw,42px);}
+.tn-btn{width:52px;height:52px;border-radius:50%;border:1px solid rgba(27,25,23,.18);display:grid;place-items:center;transition:all .5s;}
+.tn-btn:hover{background:#1B1917;border-color:#1B1917;} .tn-btn:hover svg{stroke:#FBF9F6;}
+.tn-dots{display:flex;gap:8px;margin-left:12px;} .tn-dot{width:26px;height:2.5px;background:rgba(27,25,23,.16);border-radius:2px;transition:background .45s;border:0;padding:0;cursor:pointer;} .tn-dot.active{background:#A2714E;}
+.testi-shell{position:relative;overflow:hidden;}
+.testi-track{display:flex;transition:transform .95s cubic-bezier(.76,0,.24,1);}
+.testi-slide{min-width:100%;padding:clamp(6px,1vw,10px);}
+
+/* CTA */
+.cta-band{background:#191714;color:#F4EFE8;position:relative;overflow:hidden;}
+.cta-band .glow{position:absolute;width:640px;height:640px;border-radius:50%;background:radial-gradient(circle,rgba(162,113,78,.24),transparent 66%);filter:blur(28px);}
+.cta-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:clamp(38px,5.5vw,86px);align-items:center;position:relative;z-index:2;}
+.cta-band .h2{color:#FBF9F6;} .cta-band .lead{color:#B9AEA1;}
+.contact-item{display:flex;gap:15px;align-items:flex-start;} .ci-icon{width:38px;height:38px;border-radius:50%;border:1px solid rgba(199,154,114,.42);display:grid;place-items:center;flex:none;} .ci-label{font-size:.715rem;letter-spacing:.21em;text-transform:uppercase;color:#9C9084;} .ci-value{margin-top:5px;}
+.contact-form{display:grid;gap:16px;}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+.field{position:relative;} .field input,.field textarea{width:100%;padding:1.22rem 1.15rem .62rem;background:rgba(251,249,246,.055);border:1px solid rgba(244,239,232,.19);border-radius:9px;color:#F4EFE8;font-size:.965rem;font-family:inherit;transition:border-color .42s,background .42s;outline:none;}
+.field textarea{min-height:118px;resize:vertical;}
+.field label{position:absolute;left:1.15rem;top:1.06rem;font-size:.945rem;color:#9C9084;pointer-events:none;transition:all .34s;}
+.field input:focus,.field textarea:focus{border-color:#C79A72;background:rgba(251,249,246,.1);}
+.field input:focus + label,.field textarea:focus + label,.field input:not(:placeholder-shown) + label,.field textarea:not(:placeholder-shown) + label{top:.42rem;font-size:.665rem;letter-spacing:.175em;text-transform:uppercase;color:#C79A72;}
+.form-success{display:none;align-items:center;gap:11px;color:#C79A72;font-size:.905rem;letter-spacing:.045em;padding:14px 16px;border:1px solid rgba(199,154,114,.36);border-radius:9px;}
+.form-success.show{display:flex;}
+
+/* Footer */
+.footer{background:#F2EDE6;padding:clamp(62px,7vw,102px) 0 30px;}
+.footer-top{display:grid;grid-template-columns:1.55fr 1fr 1fr 1.15fr;gap:clamp(26px,3.6vw,52px);}
+.footer h4{font-size:.735rem;letter-spacing:.215em;text-transform:uppercase;color:#8B8177;font-family:'Inter',sans-serif;font-weight:500;margin-bottom:22px;}
+.footer-links{display:grid;gap:11px;} .footer-links a{font-size:.945rem;color:#4F483F;display:inline-block;width:fit-content;transition:color .38s,transform .5s;} .footer-links a:hover{color:#A2714E;transform:translateX(5px);}
+.footer-brand p{color:#6B6359;font-size:.975rem;line-height:1.82;max-width:36ch;margin-top:19px;}
+.footer-form{display:flex;gap:9px;margin-top:17px;} .footer-form input{flex:1;padding:.92rem 1.08rem;border:1px solid rgba(27,25,23,.16);border-radius:999px;background:transparent;font-size:.905rem;font-family:inherit;outline:none;transition:border-color .4s;} .footer-form input:focus{border-color:#A2714E;} .footer-form button{padding:.92rem 1.55rem;border-radius:999px;background:#1B1917;color:#F4EFE8;font-size:.725rem;letter-spacing:.155em;text-transform:uppercase;transition:background .45s;} .footer-form button:hover{background:#A2714E;}
+.footer-word{font-family:'Fraunces',serif;font-size:clamp(3.1rem,13.4vw,12.2rem);line-height:.92;letter-spacing:-.038em;color:#1B1917;opacity:.095;margin:clamp(46px,6vw,82px) 0 26px;white-space:nowrap;overflow:hidden;}
+.footer-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;padding-top:26px;border-top:1px solid rgba(27,25,23,.13);}
+.footer-bottom p,.footer-bottom a{font-size:.815rem;letter-spacing:.085em;color:#7B7267;}
+.footer-social{display:flex;gap:22px;} .footer-social a{transition:color .4s;} .footer-social a:hover{color:#A2714E;}
+
+.grain{position:fixed;inset:0;pointer-events:none;z-index:200;opacity:.22;mix-blend-mode:multiply;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.82' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.42'/%3E%3C/svg%3E");}
+
+@media (max-width:1280px){ .nav-link{padding:28px 8px;font-size:.68rem;} .br-hero-grid{grid-template-columns:1fr;} }
+@media (max-width:1180px){ .main-nav,.header-phone,.topbar-links{display:none;} .menu-toggle{display:flex;} .topbar-inner{justify-content:space-between;} .product-grid{grid-template-columns:1fr 1fr;} .fc-grid{grid-template-columns:1fr 1fr;} .mat-grid{grid-template-columns:1fr 1fr;} .dp-grid{grid-template-columns:1fr 1fr;} .inspo-grid{grid-template-columns:1fr 1fr;} .inspo-item.tall{grid-row:span 1;aspect-ratio:1/1.1;} }
+@media (max-width:1100px){ .cta-grid{grid-template-columns:1fr;} .footer-top{grid-template-columns:1fr 1fr;} }
+@media (max-width:760px){ body{font-size:16px;} .topbar-right{margin-left:0;} .topbar-right a span{display:none;} .product-grid{grid-template-columns:1fr;} .fc-grid,.mat-grid,.dp-grid,.inspo-grid{grid-template-columns:1fr;} .br-hero{min-height:auto;} .br-hero-content{padding:clamp(120px,15vw,170px) 0 clamp(60px,8vw,80px);} .br-hero-stats{flex-wrap:wrap;gap:24px;} .form-row,.footer-top{grid-template-columns:1fr;} .mode-switch{padding:3px;} .mode-switch button{padding:.5rem .9rem;font-size:.66rem;} .testi-card{grid-template-columns:1fr;} .testi-card .avatar{width:82px;height:82px;} }
+@media (prefers-reduced-motion:reduce){ *,*::before,*::after{animation-duration:.001ms!important;transition-duration:.001ms!important;scroll-behavior:auto!important;} .reveal,.split .word i{opacity:1!important;transform:none!important;} .mask::after{display:none;} .mask img{transform:none!important;}}
+</style>
+</head>
+<body id="top">
+<div class="grain" aria-hidden="true"></div>
+
+<!-- TOPBAR -->
+<div class="topbar">
+  <div class="container topbar-inner">
+    <div class="mode-switch">
+      <button class="active">Residential</button>
+      <button>Commercial</button>
+    </div>
+    <div class="topbar-links">
+      <a href="demo-4.html#dealer">Become a dealer</a>
+      <a href="demo-4.html#contact">Contact us</a>
+      <a href="demo-4.html#faq">Services</a>
+      <a href="demo-4.html#exceptions" class="hl">We are Exceptions</a>
+    </div>
+    <div class="topbar-right">
+      <a href="tel:+912248901120"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M3 2.5h2.2l1 2.6-1.4 1.1a9 9 0 004 4l1.1-1.4 2.6 1V12c0 .8-.7 1.5-1.5 1.4C6.4 12.9 3.1 9.6 2.6 4A1.4 1.4 0 014 2.5z"/></svg><span>+91 22 4890 1120</span></a>
+      <span class="tb-sep"></span>
+      <a href="mailto:hello@embroshyal.com">hello@embroshyal.com</a>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="site-header" id="header">
+  <div class="container header-inner">
+    <a href="demo-4.html" class="brand" aria-label="Embroshyal home">
+      <span class="brand-mark">E</span>
+      <span class="brand-text"><span class="brand-name">Embroshyal</span><span class="brand-sub">Private Limited</span></span>
+    </a>
+    <nav class="main-nav" aria-label="Primary">
+      <div class="nav-item"><a href="demo-4.html" class="nav-link">Home</a></div>
+      <div class="nav-item"><a href="living-room.html" class="nav-link">Living Room</a></div>
+      <div class="nav-item"><a href="bedroom.html" class="nav-link active-page">Bedroom</a></div>
+      <div class="nav-item"><a href="demo-4.html#spaces" class="nav-link">Dining Room</a></div>
+      <div class="nav-item"><a href="demo-4.html#spaces" class="nav-link">Office & Study</a></div>
+      <div class="nav-item"><a href="demo-4.html#spaces" class="nav-link">Modular Kitchens</a></div>
+      <div class="nav-item"><a href="demo-4.html#products" class="nav-link nav-link-all">All Products</a></div>
+    </nav>
+    <div class="header-actions">
+      <a href="tel:+912248901120" class="header-phone"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M3 2.5h2.2l1 2.6-1.4 1.1a9 9 0 004 4l1.1-1.4 2.6 1V12c0 .8-.7 1.5-1.5 1.4C6.4 12.9 3.1 9.6 2.6 4A1.4 1.4 0 014 2.5z"/></svg>+91 22 4890 1120</a>
+      <a href="demo-4.html#contact" class="btn btn-dark btn-sm">Book a consultation</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="scroll-progress" id="scrollProgress"></div>
+</header>
+
+<!-- Mobile drawer -->
+<div class="drawer" id="drawer">
+  <div class="drawer-scroll">
+    <div class="mode-switch">
+      <button class="active">Residential</button>
+      <button>Commercial</button>
+    </div>
+    <nav aria-label="Mobile">
+      <a href="demo-4.html" class="drawer-small" style="font-family:Fraunces,serif!important;font-size:1.35rem!important;color:#1B1917!important;padding:.42em 0!important;border-bottom:1px solid rgba(27,25,23,.09);">Home</a>
+      <a href="living-room.html" class="drawer-small" style="font-family:Fraunces,serif!important;font-size:1.35rem!important;color:#1B1917!important;padding:.42em 0!important;border-bottom:1px solid rgba(27,25,23,.09);">Living Room</a>
+      <a href="bedroom.html" class="drawer-small" style="font-family:Fraunces,serif!important;font-size:1.35rem!important;color:#A2714E!important;padding:.42em 0!important;border-bottom:1px solid rgba(27,25,23,.09);">Bedroom</a>
+      <a href="demo-4.html#spaces" class="drawer-small" style="font-family:Fraunces,serif!important;font-size:1.35rem!important;color:#1B1917!important;padding:.42em 0!important;border-bottom:1px solid rgba(27,25,23,.09);">All Products</a>
+    </nav>
+    <div class="drawer-foot">
+      <p class="muted" style="font-size:.92rem;">hello@embroshyal.com<br>+91 22 4890 1120</p>
+      <a href="demo-4.html#contact" class="btn btn-dark" style="align-self:flex-start;">Start a project</a>
+    </div>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="br-hero">
+  <div class="br-hero-bg">
+    <img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?q=80&w=1900&auto=format&fit=crop" alt="Premium bedroom by Embroshyal">
+  </div>
+  <div class="br-hero-content">
+    <div class="container">
+      <div class="br-hero-grid">
+        <div>
+          <div class="br-hero-eyebrow reveal">
+            <span>Embroshyal Private Limited</span>
+            <span class="sep"></span>
+            <span>Residential Collection</span>
+          </div>
+          <h1 class="br-hero-title split reveal" style="--d:.12s">
+            <span class="word"><i>Where</i></span>
+            <span class="word"><i>rest,</i></span><br>
+            <span class="word"><i class="accent">refined.</i></span>
+          </h1>
+          <p class="br-hero-desc reveal" style="--d:.22s">Platform beds, wardrobes, vanities and bedside tables — designed around quiet luxury. White oak, lime-washed ash, fluted glass and brushed bronze details built to endure.</p>
+          <div class="br-hero-stats reveal" style="--d:.32s">
+            <div class="stat-item"><div class="num">28+</div><div class="lbl">Bed designs</div></div>
+            <div class="stat-item"><div class="num">6</div><div class="lbl">Wardrobe systems</div></div>
+            <div class="stat-item"><div class="num">15 yr</div><div class="lbl">Frame warranty</div></div>
+            <div class="stat-item"><div class="num">4-6 wk</div><div class="lbl">Lead time</div></div>
+          </div>
+          <div class="br-hero-actions reveal" style="--d:.42s">
+            <a href="#collection" class="btn btn-light">Explore collection<svg class="arw" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M2 8h12M9 3l5 5-5 5"/></svg></a>
+            <a href="#contact" class="btn btn-outline" style="border-color:rgba(255,255,255,.4);color:#fff;">Book consultation</a>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COLLECTION -->
+<section class="section" id="collection">
+  <div class="container">
+    <div class="section-head" style="max-width:790px;">
+      <p class="eyebrow reveal">Curated for the bedroom</p>
+      <h2 class="h2 split reveal" style="margin:22px 0 0;">
+        <span class="word"><i>Sleep</i></span> <span class="word"><i>in</i></span> <span class="word"><i>quiet</i></span> <span class="word"><i>luxury.</i></span>
+      </h2>
+    </div>
+    <div class="collection-bar">
+      <div class="filter-tabs">
+        <button class="filter-tab active" data-filter="all">All</button>
+        <button class="filter-tab" data-filter="beds">Beds & Headboards</button>
+        <button class="filter-tab" data-filter="wardrobes">Wardrobes</button>
+        <button class="filter-tab" data-filter="bedside">Bedside Tables</button>
+        <button class="filter-tab" data-filter="dressers">Dressers & Vanities</button>
+      </div>
+      <div class="collection-count">Showing <span id="prodCount">12</span> pieces</div>
+    </div>
+    <div class="product-grid" id="productGrid"></div>
+    <div style="text-align:center;margin-top:clamp(42px,5vw,64px);" class="reveal">
+      <a href="demo-4.html#products" class="btn btn-dark">View full catalogue<svg class="arw" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M2 8h12M9 3l5 5-5 5"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED COLLECTIONS -->
+<section class="section section-sand">
+  <div class="container">
+    <div class="section-head center">
+      <p class="eyebrow reveal">Explore by category</p>
+      <h2 class="h2 split reveal" style="margin:22px 0 0;">
+        <span class="word"><i>Designed</i></span> <span class="word"><i>for</i></span> <span class="word"><i>rest.</i></span>
+      </h2>
+      <p class="lead reveal" style="--d:.12s;max-width:56ch;margin:0 auto;">Every Embroshyal bedroom piece is proportioned to work together — platform beds with matching bedside tables, wardrobes with vanity systems.</p>
+    </div>
+    <div class="fc-grid">
+      <a href="#collection" class="fc-card mask reveal">
+        <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=900&auto=format&fit=crop" alt="Beds">
+        <div class="fc-overlay"></div>
+        <div class="fc-info">
+          <h3>Beds & Headboards</h3>
+          <p>Platform beds, upholstered heads, solid oak frames in 6 sizes.</p>
+          <span class="fc-link">Explore beds <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M2 8h12M9 3l5 5-5 5"/></svg></span>
+        </div>
+      </a>
+      <a href="#collection" class="fc-card mask reveal" style="--d:.08s">
+        <img src="https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?q=80&w=900&auto=format&fit=crop" alt="Wardrobes">
+        <div class="fc-overlay"></div>
+        <div class="fc-info">
+          <h3>Wardrobes</h3>
+          <p>Sliding, hinged and walk-in systems with soft-close Blum hardware.</p>
+          <span class="fc-link">Explore wardrobes <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M2 8h12M9 3l5 5-5 5"/></svg></span>
+        </div>
+      </a>
+      <a href="#collection" class="fc-card mask reveal" style="--d:.16s">
+        <img src="https://images.unsplash.com/photo-1533090161767-e6ffed986c88?q=80&w=900&auto=format&fit=crop" alt="Bedside">
+        <div class="fc-overlay"></div>
+        <div class="fc-info">
+          <h3>Bedside & Dressers</h3>
+          <p>Compact nightstands and full-length vanities in matching finishes.</p>
+          <span class="fc-link">Explore bedside <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M2 8h12M9 3l5 5-5 5"/></svg></span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- INSPIRATION GALLERY -->
+<section class="section">
+  <div class="container">
+    <div class="section-head" style="margin-bottom:clamp(38px,5vw,58px);">
+      <p class="eyebrow reveal">Bedroom inspiration</p>
+      <h2 class="h2 split reveal" style="margin:22px 0 0;">
+        <span class="word"><i>Spaces</i></span> <span class="word"><i>that</i></span> <span class="word"><i>restore.</i></span>
+      </h2>
+    </div>
+    <div class="inspo-grid">
+      <div class="inspo-item tall mask reveal">
+        <img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?q=80&w=900&auto=format&fit=crop" alt="Minimal bedroom">
+        <div class="inspo-overlay"></div>
+        <div class="inspo-info"><h4>Quiet Luxury</h4><p>White oak, linen, soft neutrals</p></div>
+      </div>
+      <div class="inspo-item mask reveal" style="--d:.08s">
+        <img src="https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?q=80&w=900&auto=format&fit=crop" alt="Master bedroom">
+        <div class="inspo-overlay"></div>
+        <div class="inspo-info"><h4>Master Suite</h4><p>Walk-in closet, vanity, king bed</p></div>
+      </div>
+      <div class="inspo-item mask reveal" style="--d:.16s">
+        <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=900&auto=format&fit=crop" alt="Guest room">
+        <div class="inspo-overlay"></div>
+        <div class="inspo-info"><h4>Guest Retreat</h4><p>Compact luxury for small rooms</p></div>
+      </div>
+      <div class="inspo-item mask reveal" style="--d:.24s">
+        <img src="https://images.unsplash.com/photo-1617325247661-675ab4b64ae2?q=80&w=900&auto=format&fit=crop" alt="Kids room">
+        <div class="inspo-overlay"></div>
+        <div class="inspo-info"><h4>Children's Room</h4><p>Bunk beds, study nooks, storage</p></div>
+      </div>
+      <div class="inspo-item tall mask reveal" style="--d:.32s">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=900&auto=format&fit=crop" alt="En-suite">
+        <div class="inspo-overlay"></div>
+        <div class="inspo-info"><h4>En-Suite Flow</h4><p>Bedroom to bathroom continuity</p></div>
+      </div>
+      <div class="inspo-item mask reveal" style="--d:.4s">
+        <img src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?q=80&w=900&auto=format&fit=crop" alt="Closet">
+        <div class="inspo-overlay"></div>
+        <div class="inspo-info"><h4>Walk-in Closet</h4><p>Custom storage systems</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MATERIALS -->
+<section class="section section-sand">
+  <div class="container">
+    <div class="section-head center">
+      <p class="eyebrow reveal">Material library</p>
+      <h2 class="h2 split reveal" style="margin:22px 0 0;">
+        <span class="word"><i>Touch</i></span> <span class="word"><i>the</i></span> <span class="word"><i>difference.</i></span>
+      </h2>
+      <p class="lead reveal" style="--d:.12s;max-width:52ch;margin:0 auto;">Hand-selected materials for restful spaces — every surface chosen for softness, warmth and longevity.</p>
+    </div>
+    <div class="mat-grid">
+      <div class="mat-card reveal">
+        <div class="mat-swatch" style="background:linear-gradient(135deg,#D4C4A8,#A89070);"></div>
+        <h4>Lime-Washed Ash</h4>
+        <p>Light, airy timber with a chalky finish — perfect for platform bed frames and headboards.</p>
+      </div>
+      <div class="mat-card reveal" style="--d:.08s">
+        <div class="mat-swatch" style="background:linear-gradient(135deg,#E8DDD0,#C4B8A9);"></div>
+        <h4>Fluted Glass</h4>
+        <p>Textured wardrobe panels and vanity mirrors with a soft, diffused glow.</p>
+      </div>
+      <div class="mat-card reveal" style="--d:.16s">
+        <div class="mat-swatch" style="background:linear-gradient(135deg,#C79A72,#8B5E3C);"></div>
+        <h4>Brushed Bronze</h4>
+        <p>Legs, handles and accents in PVD-coated bronze — warm, understated luxury.</p>
+      </div>
+      <div class="mat-card reveal" style="--d:.24s">
+        <div class="mat-swatch" style="background:linear-gradient(135deg,#D8CFC4,#B0A697);"></div>
+        <h4>Belgian Linen</h4>
+        <p>Upholstered headboards in pre-washed linen — naturally temperature-regulating.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DESIGN PROCESS -->
+<section class="section">
+  <div class="container">
+    <div class="section-head" style="margin-bottom:clamp(42px,5vw,64px);">
+      <p class="eyebrow reveal">How we work</p>
+      <h2 class="h2 split reveal" style="margin:22px 0 0;">
+        <span class="word"><i>From</i></span> <span class="word"><i>concept</i></span> <span class="word"><i>to</i></span> <span class="word"><i>your</i></span> <span class="word"><i>bedroom.</i></span>
+      </h2>
+    </div>
+    <div class="dp-grid">
+      <div class="dp-item reveal"><h4>Consultation</h4><p>We visit your space, understand your sleep preferences, and measure every dimension.</p></div>
+      <div class="dp-item reveal" style="--d:.08s"><h4>3D Design</h4><p>Photorealistic renders of your bedroom — see it before it's built. Unlimited revisions.</p></div>
+      <div class="dp-item reveal" style="--d:.16s"><h4>Workshop Build</h4><p>Crafted in our Mumbai workshop with FSC timber, low-VOC finishes and Blum hardware.</p></div>
+      <div class="dp-item reveal" style="--d:.24s"><h4>Installation & Care</h4><p>White-glove delivery, professional assembly, and 12 months of snag resolution.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIAL -->
+<section class="section section-sand">
+  <div class="container">
+    <div class="section-head" style="margin-bottom:clamp(38px,5vw,58px);">
+      <p class="eyebrow reveal">Client voices</p>
+      <h2 class="h2 split reveal" style="margin:22px 0 0;">
+        <span class="word"><i>Bedrooms</i></span> <span class="word"><i>they</i></span> <span class="word"><i>never</i></span> <span class="word"><i>leave.</i></span>
+      </h2>
+    </div>
+    <div class="testi-shell reveal">
+      <div class="testi-track" id="testiTrack">
+        <div class="testi-slide">
+          <div class="testi-card">
+            <div class="avatar"><img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=500&auto=format&fit=crop" alt="Aditi"/></div>
+            <div>
+              <p class="testi-quote">"The wardrobe system they designed for our master bedroom is the most organised space in our home. Every shoe, every sari, every accessory has its place. It's been two years and it still feels brand new."</p>
+              <div class="testi-person"><span class="line"></span><strong>Aditi Raghavan</strong><span>Bandra Residence</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-slide">
+          <div class="testi-card">
+            <div class="avatar"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=500&auto=format&fit=crop" alt="Karan"/></div>
+            <div>
+              <p class="testi-quote">"We wanted a bedroom that felt like a five-star hotel but lived like home. The platform bed with the linen headboard, the matching bedside tables — every morning feels like a vacation."</p>
+              <div class="testi-person"><span class="line"></span><strong>Karan Mehta</strong><span>Worli Penthouse</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-slide">
+          <div class="testi-card">
+            <div class="avatar"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=500&auto=format&fit=crop" alt="Sana"/></div>
+            <div>
+              <p class="testi-quote">"What sets them apart is restraint. They talked us out of more than they sold us — and the result is the most peaceful bedroom we have ever owned. Simple, warm, perfect."</p>
+              <div class="testi-person"><span class="line"></span><strong>Sana Qureshi</strong><span>Powai Apartment</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-nav">
+        <button class="tn-btn" id="testiPrev" aria-label="Previous"><svg width="18" height="18" viewBox="0 0 16 16" fill="none" stroke="#1B1917" stroke-width="1.4"><path d="M14 8H2M7 3L2 8l5 5"/></svg></button>
+        <button class="tn-btn" id="testiNext" aria-label="Next"><svg width="18" height="18" viewBox="0 0 16 16" fill="none" stroke="#1B1917" stroke-width="1.4"><path d="M2 8h12M9 3l5 5-5 5"/></svg></button>
+        <div class="tn-dots">
+          <button class="tn-dot active" aria-label="Slide 1"></button>
+          <button class="tn-dot" aria-label="Slide 2"></button>
+          <button class="tn-dot" aria-label="Slide 3"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA / CONTACT -->
+<section class="section cta-band" id="contact">
+  <div class="glow" style="top:-180px;right:-140px;"></div>
+  <div class="glow" style="bottom:-260px;left:-180px;"></div>
+  <div class="container">
+    <div class="cta-grid">
+      <div>
+        <p class="eyebrow eyebrow-light reveal" style="color:#C79A72;">Start a conversation</p>
+        <h2 class="h2 split reveal" style="margin:22px 0 24px;">
+          <span class="word"><i>Let's</i></span> <span class="word"><i>design</i></span> <span class="word"><i>your</i></span> <span class="word"><i>perfect</i></span> <span class="word"><i>bedroom.</i></span>
+        </h2>
+        <p class="lead reveal" style="--d:.12s;max-width:44ch;">Tell us about your space, your style and your timeline. A principal from our studio will get back to you within one working day.</p>
+        <div class="reveal" style="--d:.2s;margin-top:38px;display:grid;gap:22px;">
+          <div class="contact-item"><div class="ci-icon"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="#C79A72" stroke-width="1.3"><rect x="1.5" y="3" width="13" height="10" rx="1.5"/><path d="M2 4l6 4.5L14 4"/></svg></div><div><div class="ci-label">Email</div><div class="ci-value">hello@embroshyal.com</div></div></div>
+          <div class="contact-item"><div class="ci-icon"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="#C79A72" stroke-width="1.3"><path d="M3 2.5h2.2l1 2.6-1.4 1.1a9 9 0 004 4l1.1-1.4 2.6 1V12c0 .8-.7 1.5-1.5 1.4C6.4 12.9 3.1 9.6 2.6 4A1.4 1.4 0 014 2.5z"/></svg></div><div><div class="ci-label">Studio</div><div class="ci-value">+91 22 4890 1120 · Mon-Sat, 10am-7pm IST</div></div></div>
+          <div class="contact-item"><div class="ci-icon"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="#C79A72" stroke-width="1.3"><path d="M8 1.6c-2.5 0-4.5 2-4.5 4.5C3.5 9.6 8 14.4 8 14.4s4.5-4.8 4.5-8.3c0-2.5-2-4.5-4.5-4.5z"/><circle cx="8" cy="6.1" r="1.7"/></svg></div><div><div class="ci-label">Experience Centre</div><div class="ci-value">Level 6, Kalaghoda House, Fort, Mumbai 400001</div></div></div>
+        </div>
+      </div>
+      <div class="reveal" style="--d:.12s">
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="field"><input type="text" id="fname" placeholder=" " required><label for="fname">First name</label></div>
+            <div class="field"><input type="text" id="lname" placeholder=" " required><label for="lname">Last name</label></div>
+          </div>
+          <div class="form-row">
+            <div class="field"><input type="email" id="cemail" placeholder=" " required><label for="cemail">Email</label></div>
+            <div class="field"><input type="tel" id="cphone" placeholder=" "><label for="cphone">Phone</label></div>
+          </div>
+          <div class="field"><textarea id="cmsg" placeholder=" " required></textarea><label for="cmsg">Tell us about your bedroom project</label></div>
+          <div style="display:flex;align-items:center;gap:18px;flex-wrap:wrap;">
+            <button type="submit" class="btn btn-light">Send inquiry<svg class="arw" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M2 8h12M9 3l5 5-5 5"/></svg></button>
+            <p style="font-size:.795rem;color:#8E8377;letter-spacing:.045em;">We respond within 1 working day.</p>
+          </div>
+          <div class="form-success" id="formSuccess">Thank you — your inquiry has been sent. We'll be in touch shortly.</div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="demo-4.html" class="brand"><span class="brand-mark">E</span><span class="brand-text"><span class="brand-name">Embroshyal</span><span class="brand-sub">Private Limited</span></span></a>
+        <p>An interior architecture, furniture and styling studio designing calm, enduring spaces across India and the Gulf since 2012.</p>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <div class="footer-links">
+          <a href="living-room.html">Living room</a>
+          <a href="bedroom.html">Bedroom</a>
+          <a href="demo-4.html#spaces">Dining room</a>
+          <a href="demo-4.html#spaces">Modular kitchens</a>
+          <a href="demo-4.html#products">All products</a>
+        </div>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <div class="footer-links">
+          <a href="demo-4.html#exceptions">About us</a>
+          <a href="demo-4.html#dealer">Become a dealer</a>
+          <a href="demo-4.html#faq">Services</a>
+          <a href="demo-4.html#products">Projects</a>
+          <a href="demo-4.html#contact">Contact us</a>
+        </div>
+      </div>
+      <div>
+        <h4>Stay in touch</h4>
+        <p class="muted" style="font-size:.945rem;line-height:1.78;">Occasional notes on material, craft and the collections we're proud of.</p>
+        <form class="footer-form" id="newsletterForm"><input type="email" placeholder="Your email address" aria-label="Email" required><button type="submit">Join</button></form>
+        <p class="muted" id="newsletterNote" style="font-size:.795rem;letter-spacing:.115em;margin-top:12px;opacity:0;transition:opacity .5s;">Thank you — you're subscribed.</p>
+      </div>
+    </div>
+    <div class="footer-word">EMBROSHYAL</div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="year">2024</span> Embroshyal Private Limited. All rights reserved.</p>
+      <div class="footer-social">
+        <a href="#">Instagram</a><a href="#">LinkedIn</a><a href="#">Pinterest</a><a href="#">Privacy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+'use strict';
+var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+var io = new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:0.12,rootMargin:'0px 0px -8% 0px'});
+
+var PRODUCTS = [
+  {filter:'beds',name:'Terra Platform Bed',price:'₹ 1,12,000',badge:'New',img:'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=800&auto=format&fit=crop',desc:'Solid oak frame, floating base, fits king mattress.'},
+  {filter:'beds',name:'Linen Upholstered Bed',price:'₹ 94,000',img:'https://images.unsplash.com/photo-1617325247661-675ab4b64ae2?q=80&w=800&auto=format&fit=crop',desc:'Belgian linen headboard, oak legs, queen & king.'},
+  {filter:'beds',name:'Walnut Canopy Bed',price:'₹ 1,48,000',badge:'Limited',badgeGold:true,img:'https://images.unsplash.com/photo-1540518614846-7eded433c457?q=80&w=800&auto=format&fit=crop',desc:'Minimalist four-poster in solid walnut.'},
+  {filter:'wardrobes',name:'Sliding Wardrobe 8ft',price:'₹ 1,68,000',badge:'Bestseller',badgeGold:true,img:'https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?q=80&w=800&auto=format&fit=crop',desc:'Fluted glass panels, soft-close, interior LED.'},
+  {filter:'wardrobes',name:'Walk-in Closet System',price:'₹ 2,45,000',img:'https://images.unsplash.com/photo-1558997519-83ea9252edf8?q=80&w=800&auto=format&fit=crop',desc:'Modular oak system, custom configuration.'},
+  {filter:'wardrobes',name:'Hinged Wardrobe 6ft',price:'₹ 88,000',img:'https://images.unsplash.com/photo-1558618666-fcd25c85f82e?q=80&w=800&auto=format&fit=crop',desc:'Solid wood frame, adjustable shelves, mirror door.'},
+  {filter:'bedside',name:'Oak Nightstand',price:'₹ 22,000',img:'https://images.unsplash.com/photo-1533090161767-e6ffed986c88?q=80&w=800&auto=format&fit=crop',desc:'Two drawers, soft-close, white oak finish.'},
+  {filter:'bedside',name:'Marble Side Table',price:'₹ 28,500',img:'https://images.unsplash.com/photo-1611269154421-4e27233ac5c7?q=80&w=800&auto=format&fit=crop',desc:'Calacatta marble top, brushed bronze legs.'},
+  {filter:'bedside',name:'Floating Nightstand',price:'₹ 16,500',img:'https://images.unsplash.com/photo-1595428774223-ef52624120d2?q=80&w=800&auto=format&fit=crop',desc:'Wall-mounted, single drawer, oak or walnut.'},
+  {filter:'dressers',name:'6-Drawer Dresser',price:'₹ 72,000',badge:'Bestseller',badgeGold:true,img:'https://images.unsplash.com/photo-1558618666-fcd25c85f82e?q=80&w=800&auto=format&fit=crop',desc:'Solid ash, soft-close drawers, brass pulls.'},
+  {filter:'dressers',name:'Vanity with Mirror',price:'₹ 58,000',img:'https://images.unsplash.com/photo-1618220179428-22790b461013?q=80&w=800&auto=format&fit=crop',desc:'Oak vanity, fluted mirror, LED backlight.'},
+  {filter:'dressers',name:'Chest of Drawers',price:'₹ 48,000',img:'https://images.unsplash.com/photo-1595428774223-ef52624120d2?q=80&w=800&auto=format&fit=crop',desc:'Tall 5-drawer unit in lime-washed ash.'}
+];
+
+var grid = document.getElementById('productGrid');
+var countEl = document.getElementById('prodCount');
+
+function renderProducts(filter){
+  var list = filter === 'all' ? PRODUCTS : PRODUCTS.filter(function(p){return p.filter === filter;});
+  countEl.textContent = list.length;
+  grid.innerHTML = list.map(function(p){
+    return '<article class="product-card reveal"><div class="pc-media"><img src="'+p.img+'" alt="'+p.name+'" loading="lazy">'+(p.badge?'<span class="pc-badge '+(p.badgeGold?'gold':'')+'">'+p.badge+'</span>':'')+'<button class="pc-quick">Quick view</button></div><div class="pc-info"><div class="pc-cat">'+p.filter.replace(/-/g,' ')+'</div><h4>'+p.name+'</h4><p style="font-size:.84rem;color:#7B7267;line-height:1.6;margin-bottom:10px;">'+p.desc+'</p><div class="pc-price">'+p.price+(p.old?' <s>'+p.old+'</s>':'')+'</div></div></article>';
+  }).join('');
+  grid.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+}
+
+renderProducts('all');
+
+document.querySelectorAll('.filter-tab').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    document.querySelectorAll('.filter-tab').forEach(function(b){b.classList.remove('active');});
+    btn.classList.add('active');
+    renderProducts(btn.dataset.filter);
+  });
+});
+
+document.querySelectorAll('.reveal, .split, .mask').forEach(function(el){io.observe(el);});
+window.addEventListener('load', function(){document.querySelectorAll('.br-hero .reveal, .br-hero .split').forEach(function(el,i){setTimeout(function(){el.classList.add('in');},60+i*90);});});
+setTimeout(function(){document.querySelectorAll('.br-hero .reveal, .br-hero .split').forEach(function(el){el.classList.add('in');});},700);
+
+var header = document.getElementById('header');
+var progress = document.getElementById('scrollProgress');
+var ticking = false;
+function onScroll(){var y=window.pageYOffset||document.documentElement.scrollTop;header.classList.toggle('scrolled',y>10);var doc=document.documentElement;var max=(doc.scrollHeight-window.innerHeight)||1;progress.style.transform='scaleX('+Math.min(1,Math.max(0,y/max))+')';ticking=false;}
+window.addEventListener('scroll',function(){if(!ticking){ticking=true;requestAnimationFrame(onScroll);}},{passive:true});onScroll();
+
+var toggle=document.getElementById('menuToggle');
+var drawer=document.getElementById('drawer');
+function closeDrawer(){drawer.classList.remove('open');toggle.classList.remove('open');toggle.setAttribute('aria-expanded','false');document.body.style.overflow='';}
+toggle.addEventListener('click',function(){var open=drawer.classList.toggle('open');toggle.classList.toggle('open',open);toggle.setAttribute('aria-expanded',String(open));document.body.style.overflow=open?'hidden':'';});
+drawer.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){closeDrawer();});});
+window.addEventListener('keydown',function(e){if(e.key==='Escape')closeDrawer();});
+
+var track=document.getElementById('testiTrack');
+var dots=Array.from(document.querySelectorAll('.tn-dot'));
+var prevBtn=document.getElementById('testiPrev');
+var nextBtn=document.getElementById('testiNext');
+var current=0,autoTimer=null;
+function goTo(i){if(!track)return;var total=dots.length;current=(i+total)%total;track.style.transform='translateX(-'+current*100+'%)';dots.forEach(function(d,idx){d.classList.toggle('active',idx===current);});}
+function restartAuto(){if(autoTimer)clearInterval(autoTimer);if(!reduceMotion)autoTimer=setInterval(function(){goTo(current+1);},7000);}
+if(track){prevBtn.addEventListener('click',function(){goTo(current-1);restartAuto();});nextBtn.addEventListener('click',function(){goTo(current+1);restartAuto();});dots.forEach(function(d,i){d.addEventListener('click',function(){goTo(i);restartAuto();});});var sx=0;track.addEventListener('touchstart',function(e){sx=e.touches[0].clientX;},{passive:true});track.addEventListener('touchend',function(e){var dx=e.changedTouches[0].clientX-sx;if(Math.abs(dx)>48){goTo(current+(dx>0?-1:1));restartAuto();}},{passive:true});restartAuto();}
+
+function handleForm(formId,successId){var form=document.getElementById(formId);var success=document.getElementById(successId);if(!form)return;form.addEventListener('submit',function(e){e.preventDefault();var valid=true;form.querySelectorAll('[required]').forEach(function(f){var empty=!f.value.trim();var badEmail=f.type==='email'&&f.value&&!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(f.value);if(empty||badEmail){valid=false;f.style.borderColor='#C4705A';f.addEventListener('input',function(){f.style.borderColor='';},{once:true});}});if(!valid)return;if(success)success.classList.add('show');form.reset();setTimeout(function(){if(success)success.classList.remove('show');},6500);});}
+handleForm('contactForm','formSuccess');
+var newsletterForm=document.getElementById('newsletterForm');
+var newsletterNote=document.getElementById('newsletterNote');
+if(newsletterForm){newsletterForm.addEventListener('submit',function(e){e.preventDefault();newsletterForm.reset();newsletterNote.style.opacity='1';setTimeout(function(){newsletterNote.style.opacity='0';},5000);});}
+
+var yearEl=document.getElementById('year');if(yearEl)yearEl.textContent=String(new Date().getFullYear());
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,1273 @@
+
+
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Agentic AI Course in Chandigarh | Learn to Build Intelligent AI Agents — ThinkNEXT Technologies</title>
+<meta name="description" content="Join the Agentic AI Course in Chandigarh at ThinkNEXT Technologies. Learn AI agents, LLMs, RAG, LangChain, LangGraph, CrewAI, AutoGen, automation and build real-world agentic AI projects."/>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: { ink:'#05060f', surface:'#0a0c1c', card:'#0e1124' },
+      fontFamily: { heading:['Sora','sans-serif'], body:['Inter','sans-serif'], mono:['"JetBrains Mono"','monospace'] }
+    }
+  }
+}
+</script>
+<style>
+*{-webkit-tap-highlight-color:transparent}
+body{font-family:'Inter',sans-serif;background:#05060f;color:#cbd5e1;overflow-x:hidden}
+h1,h2,h3,h4{font-family:'Sora',sans-serif}
+::selection{background:rgba(139,92,246,.45);color:#fff}
+::-webkit-scrollbar{width:9px}
+::-webkit-scrollbar-track{background:#07080f}
+::-webkit-scrollbar-thumb{background:linear-gradient(#7c3aed,#0891b2);border-radius:99px}
+
+.text-gradient{background:linear-gradient(92deg,#c4b5fd 0%,#e879f9 45%,#67e8f9 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.text-gradient-2{background:linear-gradient(92deg,#67e8f9,#c4b5fd);-webkit-background-clip:text;background-clip:text;color:transparent}
+
+.glass{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.09);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+.grad-border{position:relative;border:1px solid transparent;background:linear-gradient(#0c0f22,#0c0f22) padding-box,linear-gradient(135deg,rgba(167,139,250,.6),rgba(232,121,249,.25) 45%,rgba(103,232,249,.55)) border-box}
+
+.bg-grid{background-image:linear-gradient(rgba(148,163,184,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(148,163,184,.06) 1px,transparent 1px);background-size:54px 54px}
+
+.btn-primary{position:relative;overflow:hidden;background:linear-gradient(120deg,#7c3aed,#c026d3 55%,#db2777);box-shadow:0 10px 40px -12px rgba(192,38,211,.65);transition:transform .3s,box-shadow .3s}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 16px 50px -12px rgba(192,38,211,.85)}
+.btn-primary::after{content:"";position:absolute;top:0;left:-70%;width:45%;height:100%;background:linear-gradient(105deg,transparent,rgba(255,255,255,.35),transparent);transform:skewX(-22deg);transition:left .65s ease}
+.btn-primary:hover::after{left:135%}
+.btn-ghost{border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.03);backdrop-filter:blur(10px);transition:all .3s}
+.btn-ghost:hover{border-color:rgba(167,139,250,.6);background:rgba(139,92,246,.08);transform:translateY(-2px)}
+
+.chip{display:inline-flex;align-items:center;gap:.5rem;padding:.5rem 1.05rem;border-radius:999px;background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.09);font-size:.82rem;color:#a5b4fc;transition:all .3s ease;white-space:nowrap}
+.chip:hover{border-color:rgba(167,139,250,.55);color:#e9d5ff;transform:translateY(-2px);box-shadow:0 6px 24px -8px rgba(139,92,246,.45)}
+
+.reveal{opacity:0;transform:translateY(30px);transition:opacity .8s cubic-bezier(.22,1,.36,1),transform .8s cubic-bezier(.22,1,.36,1)}
+.reveal.in-view{opacity:1;transform:none}
+
+#navbar{transition:background .4s,border-color .4s,box-shadow .4s}
+#navbar.scrolled{background:rgba(6,7,18,.8);border-color:rgba(255,255,255,.08);backdrop-filter:blur(18px);box-shadow:0 10px 40px -20px rgba(0,0,0,.9)}
+
+#mobileMenu{transition:opacity .35s,transform .35s;transform:translateY(-10px);opacity:0;pointer-events:none}
+#mobileMenu.open{opacity:1;transform:none;pointer-events:auto}
+.burger span{transition:.3s}
+.burger.active span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.burger.active span:nth-child(2){opacity:0}
+.burger.active span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+.acc-body{max-height:0;overflow:hidden;transition:max-height .55s cubic-bezier(.4,0,.2,1)}
+.acc-icon{transition:transform .4s}
+.acc-item.open .acc-icon{transform:rotate(45deg)}
+.acc-item.open .acc-head{background:rgba(139,92,246,.08);border-color:rgba(167,139,250,.35)}
+
+.marquee{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent);mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent)}
+.marquee-track{display:flex;width:max-content;animation:marquee 32s linear infinite}
+.marquee-track.rev{animation:marquee 40s linear infinite reverse}
+.marquee:hover .marquee-track{animation-play-state:paused}
+.marquee-group{display:flex;gap:.85rem;padding-right:.85rem;align-items:center}
+@keyframes marquee{to{transform:translateX(-50%)}}
+
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+.floaty{animation:floaty 6s ease-in-out infinite}
+.floaty-slow{animation:floaty 9s ease-in-out infinite}
+@keyframes blob{0%,100%{transform:translate(0,0) scale(1)}33%{transform:translate(40px,-30px) scale(1.12)}66%{transform:translate(-30px,25px) scale(.94)}}
+.blob{animation:blob 14s ease-in-out infinite;filter:blur(90px)}
+@keyframes spin-slow{to{transform:rotate(360deg)}}
+.ring-spin{animation:spin-slow 26s linear infinite}
+.ring-spin-rev{animation:spin-slow 34s linear infinite reverse}
+@keyframes pulse-dot{0%,100%{box-shadow:0 0 0 0 rgba(52,211,153,.55)}70%{box-shadow:0 0 0 9px rgba(52,211,153,0)}}
+.pulse-dot{animation:pulse-dot 2s infinite}
+@keyframes caret{50%{opacity:0}}
+#term>div:last-child::after{content:'▌';margin-left:2px;color:#c4b5fd;animation:caret 1s step-end infinite}
+
+.feature-card{transition:transform .4s cubic-bezier(.22,1,.36,1),border-color .4s,box-shadow .4s,background .4s}
+.feature-card:hover{transform:translateY(-6px);border-color:rgba(167,139,250,.35);box-shadow:0 20px 50px -18px rgba(139,92,246,.3);background:rgba(139,92,246,.05)}
+.project-card{transition:transform .4s cubic-bezier(.22,1,.36,1),border-color .4s,box-shadow .4s}
+.project-card:hover{transform:translateY(-8px);border-color:rgba(167,139,250,.4);box-shadow:0 24px 60px -20px rgba(139,92,246,.35)}
+
+#enrollModal{position:fixed;inset:0;z-index:90;display:flex;align-items:center;justify-content:center;padding:1rem;opacity:0;visibility:hidden;transition:opacity .3s,visibility .3s}
+#enrollModal.show{opacity:1;visibility:visible}
+.modal-panel{transform:translateY(26px) scale(.97);transition:transform .4s cubic-bezier(.22,1,.36,1);width:100%;max-width:460px}
+#enrollModal.show .modal-panel{transform:none}
+
+.field{width:100%;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:.8rem;padding:.72rem 1rem;font-size:.9rem;color:#e2e8f0;outline:none;transition:.25s}
+.field:focus{border-color:rgba(167,139,250,.7);box-shadow:0 0 0 4px rgba(139,92,246,.15)}
+.field::placeholder{color:#64748b}
+select.field option{background:#0e1124}
+
+@keyframes ping-soft{0%{transform:scale(1);opacity:.5}80%,100%{transform:scale(1.7);opacity:0}}
+.wa-ping::before{content:"";position:absolute;inset:0;border-radius:9999px;background:rgba(37,211,102,.45);animation:ping-soft 1.8s cubic-bezier(0,0,.2,1) infinite}
+
+@media (prefers-reduced-motion:reduce){
+ .marquee-track,.floaty,.floaty-slow,.blob,.ring-spin,.ring-spin-rev,.wa-ping::before{animation:none}
+ .reveal{transition:none;opacity:1;transform:none}
+ html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body class="antialiased">
+
+<!-- Scroll progress -->
+<div id="progress" class="fixed top-0 left-0 h-[3px] z-[100] w-0 bg-gradient-to-r from-violet-500 via-fuchsia-500 to-cyan-400"></div>
+
+<!-- ============ NAVBAR ============ -->
+<header id="navbar" class="fixed top-0 inset-x-0 z-[70] border-b border-transparent">
+  <nav class="max-w-7xl mx-auto px-5 sm:px-8 h-[72px] flex items-center justify-between">
+    <a href="#top" class="flex items-center gap-3">
+      <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-violet-600 via-fuchsia-500 to-cyan-400 grid place-items-center shadow-lg shadow-fuchsia-900/40">
+        <svg viewBox="0 0 24 24" class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg>
+      </div>
+      <div class="leading-tight">
+        <p class="font-heading font-bold text-white text-[15px]">ThinkNEXT <span class="text-gradient">Technologies</span></p>
+        <p class="text-[10px] tracking-[.22em] text-slate-500 uppercase">Agentic AI Training · Chandigarh</p>
+      </div>
+    </a>
+    <div class="hidden lg:flex items-center gap-7 text-sm text-slate-300 font-medium">
+      <a href="#learn" class="hover:text-white transition">Learn</a>
+      <a href="#curriculum" class="hover:text-white transition">Curriculum</a>
+      <a href="#tools" class="hover:text-white transition">Tools</a>
+      <a href="#projects" class="hover:text-white transition">Projects</a>
+      <a href="#careers" class="hover:text-white transition">Careers</a>
+      <a href="#faq" class="hover:text-white transition">FAQ</a>
+    </div>
+    <div class="flex items-center gap-3">
+      <a href="tel:+919876543210" class="hidden md:flex items-center gap-2 text-sm text-slate-300 hover:text-white transition">
+        <svg viewBox="0 0 24 24" class="w-4 h-4 text-fuchsia-300" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2z"/></svg>
+        <span class="font-mono">+91 98765 43210</span>
+      </a>
+      <button class="js-enroll btn-primary hidden sm:inline-flex items-center gap-2 text-white text-sm font-semibold px-5 py-2.5 rounded-xl" data-title="Enroll in the Agentic AI Course">
+        Enroll Now
+        <svg viewBox="0 0 24 24" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </button>
+      <button id="burger" class="burger lg:hidden w-11 h-11 grid place-items-center rounded-xl glass" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+        <div class="flex flex-col items-center gap-[5px]">
+          <span class="block w-5 h-[2px] bg-slate-200 rounded-full"></span>
+          <span class="block w-5 h-[2px] bg-slate-200 rounded-full"></span>
+          <span class="block w-5 h-[2px] bg-slate-200 rounded-full"></span>
+        </div>
+      </button>
+    </div>
+  </nav>
+  <!-- Mobile menu -->
+  <div id="mobileMenu" class="lg:hidden absolute top-[76px] inset-x-4 rounded-2xl glass p-5">
+    <div class="grid grid-cols-2 gap-1 text-sm">
+      <a href="#what" class="px-3 py-2.5 rounded-lg text-slate-300 hover:bg-white/5 hover:text-white transition">What is Agentic AI?</a>
+      <a href="#learn" class="px-3 py-2.5 rounded-lg text-slate-300 hover:bg-white/5 hover:text-white transition">What You'll Learn</a>
+      <a href="#curriculum" class="px-3 py-2.5 rounded-lg text-slate-300 hover:bg-white/5 hover:text-white transition">Curriculum</a>
+      <a href="#tools" class="px-3 py-2.5 rounded-lg text-slate-300 hover:bg-white/5 hover:text-white transition">Tools Covered</a>
+      <a href="#projects" class="px-3 py-2.5 rounded-lg text-slate-300 hover:bg-white/5 hover:text-white transition">Projects</a>
+      <a href="#who" class="px-3 py-2.5 rounded-lg text-slate-300 hover:bg-white/5 hover:text-white transition">Who Should Join</a>
+      <a href="#careers" class="px-3 py-2.5 rounded-lg text-slate-300 hover:bg-white/5 hover:text-white transition">Careers</a>
+      <a href="#why" class="px-3 py-2.5 rounded-lg text-slate-300 hover:bg-white/5 hover:text-white transition">Why ThinkNEXT</a>
+      <a href="#faq" class="px-3 py-2.5 rounded-lg text-slate-300 hover:bg-white/5 hover:text-white transition col-span-2">FAQ</a>
+    </div>
+    <button class="js-enroll btn-primary mt-4 w-full text-white text-sm font-semibold py-3 rounded-xl" data-title="Enroll in the Agentic AI Course">Enroll Now — Free Counseling</button>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section id="top" class="relative min-h-screen flex items-center pt-32 pb-20 overflow-hidden">
+  <canvas id="net" class="absolute inset-0 w-full h-full opacity-60"></canvas>
+  <div class="absolute inset-0 bg-grid [mask-image:radial-gradient(ellipse_70%_60%_at_50%_35%,#000_15%,transparent_75%)]"></div>
+  <div class="blob absolute -top-32 -left-32 w-[460px] h-[460px] rounded-full bg-violet-700/30"></div>
+  <div class="blob absolute top-1/3 -right-40 w-[520px] h-[520px] rounded-full bg-fuchsia-600/20"></div>
+  <div class="blob absolute bottom-0 left-1/4 w-[420px] h-[420px] rounded-full bg-cyan-500/15"></div>
+
+  <div class="relative max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-14 lg:gap-12 items-center w-full">
+    <!-- Left -->
+    <div>
+      <div class="inline-flex items-center gap-2.5 glass rounded-full px-4 py-2 text-xs sm:text-[13px] text-slate-300">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 pulse-dot"></span>
+        Admissions Open — Agentic AI Course in Chandigarh
+      </div>
+      <h1 class="mt-6 font-heading font-extrabold text-white text-[2.55rem] leading-[1.07] sm:text-6xl lg:text-[4.1rem] tracking-tight">
+        Learn to Build <span class="text-gradient">Intelligent AI Agents</span> That Think, Plan &amp; Act
+      </h1>
+      <p class="mt-6 text-slate-400 text-base sm:text-lg max-w-xl leading-relaxed">
+        Master LLMs, RAG pipelines, multi-agent systems and real-world automation with 100% practical training at ThinkNEXT Technologies — Chandigarh's trusted AI training institute.
+      </p>
+      <div class="mt-8 flex flex-wrap items-center gap-4">
+        <button class="js-enroll btn-primary inline-flex items-center gap-2 text-white font-semibold px-7 py-3.5 rounded-xl text-[15px]" data-title="Enroll in the Agentic AI Course">
+          Enroll Now
+          <svg viewBox="0 0 24 24" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </button>
+        <a href="#curriculum" class="btn-ghost inline-flex items-center gap-2 text-white font-semibold px-7 py-3.5 rounded-xl text-[15px]">
+          View Course Curriculum
+        </a>
+      </div>
+      <div class="mt-8 inline-flex flex-wrap items-center gap-3 text-[13px] text-slate-400 glass rounded-xl px-4 py-2.5">
+        <svg viewBox="0 0 24 24" class="w-4 h-4 text-violet-300" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+        Next batch starts in <span id="countdown" class="font-mono text-violet-300 font-semibold">13d 00:00:00</span>
+      </div>
+      <div class="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3 text-sm text-slate-400">
+        <span class="flex items-center gap-1.5"><svg viewBox="0 0 24 24" class="w-4 h-4 text-amber-400" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8L12 2z"/></svg>4.9 Google Rating</span>
+        <span class="w-1 h-1 rounded-full bg-slate-600 hidden sm:block"></span>
+        <span>15+ Years of Excellence</span>
+        <span class="w-1 h-1 rounded-full bg-slate-600 hidden sm:block"></span>
+        <span>500+ Hiring Partners</span>
+      </div>
+    </div>
+
+    <!-- Right : terminal -->
+    <div class="relative">
+      <div class="absolute -top-6 -left-3 sm:-left-6 glass rounded-full px-4 py-2 text-xs text-slate-300 floaty z-10">⚡ LangGraph Workflows</div>
+      <div class="absolute -bottom-5 right-0 sm:-right-5 glass rounded-full px-4 py-2 text-xs text-slate-300 floaty-slow z-10" style="animation-delay:-3s">🤖 Multi-Agent · CrewAI</div>
+      <div class="absolute -top-3 right-4 sm:right-10 glass rounded-full px-4 py-2 text-xs text-slate-300 floaty-slow hidden sm:block" style="animation-delay:-1.5s">📚 RAG-Enabled</div>
+
+      <div class="grad-border rounded-2xl overflow-hidden shadow-2xl shadow-violet-950/60">
+        <div class="flex items-center gap-2 px-4 py-3 border-b border-white/10 bg-white/[.03]">
+          <span class="w-3 h-3 rounded-full bg-red-400/80"></span>
+          <span class="w-3 h-3 rounded-full bg-amber-300/80"></span>
+          <span class="w-3 h-3 rounded-full bg-emerald-400/80"></span>
+          <span class="ml-3 font-mono text-[11px] text-slate-500">thinknext — agent-runtime</span>
+        </div>
+        <div id="term" class="font-mono text-[12px] sm:text-[13px] leading-6 p-5 sm:p-6 min-h-[320px] sm:min-h-[344px]"></div>
+      </div>
+      <div class="absolute -inset-x-8 -bottom-10 h-24 bg-violet-600/30 blur-3xl -z-10"></div>
+    </div>
+  </div>
+  <a href="#stats" class="absolute bottom-6 left-1/2 -translate-x-1/2 hidden md:flex flex-col items-center gap-1 text-slate-500 hover:text-slate-300 transition" aria-label="Scroll down">
+    <span class="text-[10px] tracking-[.3em] uppercase">Scroll</span>
+    <svg viewBox="0 0 24 24" class="w-4 h-4 floaty" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+  </a>
+</section>
+
+<!-- ============ STATS ============ -->
+<section id="stats" class="relative border-y border-white/[.06] bg-white/[.02] scroll-mt-24">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 py-12 grid grid-cols-2 lg:grid-cols-4 gap-10">
+    <div class="reveal text-center lg:text-left">
+      <div class="font-heading text-3xl sm:text-4xl font-bold text-white"><span class="counter" data-target="15">0</span><span class="text-gradient">+</span></div>
+      <p class="mt-2 text-sm text-slate-400">Years of Training Excellence</p>
+    </div>
+    <div class="reveal text-center lg:text-left" style="transition-delay:.1s">
+      <div class="font-heading text-3xl sm:text-4xl font-bold text-white"><span class="counter" data-target="500">0</span><span class="text-gradient">+</span></div>
+      <p class="mt-2 text-sm text-slate-400">Hiring Partners for Placement</p>
+    </div>
+    <div class="reveal text-center lg:text-left" style="transition-delay:.2s">
+      <div class="font-heading text-3xl sm:text-4xl font-bold text-white"><span class="counter" data-target="4.9" data-decimals="1">0</span><span class="text-amber-400">★</span></div>
+      <p class="mt-2 text-sm text-slate-400">Google Rating by Learners</p>
+    </div>
+    <div class="reveal text-center lg:text-left" style="transition-delay:.3s">
+      <div class="font-heading text-3xl sm:text-4xl font-bold text-white"><span class="counter" data-target="100">0</span><span class="text-gradient">%</span></div>
+      <p class="mt-2 text-sm text-slate-400">Practical, Project-Based Training</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHAT IS AGENTIC AI COURSE ============ -->
+<section id="what" class="relative py-20 lg:py-28 scroll-mt-24 overflow-hidden">
+  <div class="blob absolute top-20 -right-40 w-[420px] h-[420px] rounded-full bg-violet-700/20"></div>
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-14 lg:gap-20 items-center relative">
+    <div class="reveal">
+      <p class="flex items-center gap-3 text-[11px] sm:text-xs font-semibold uppercase tracking-[.3em] text-violet-300">
+        <span class="w-8 h-px bg-violet-400/70"></span>What is an Agentic AI course?
+      </p>
+      <h2 class="mt-5 font-heading text-3xl sm:text-4xl lg:text-[2.75rem] font-bold text-white leading-tight tracking-tight">
+        From Chatbots to <span class="text-gradient">Autonomous AI Agents</span>
+      </h2>
+      <p class="mt-6 text-slate-400 leading-relaxed">
+        An Agentic AI course teaches you to build AI systems that don't just answer — they <span class="text-white font-medium">act</span>. Intelligent agents can reason, plan multi-step tasks, call external tools, remember context and improve from results with minimal human input.
+      </p>
+      <p class="mt-4 text-slate-400 leading-relaxed">
+        In the Agentic AI course in Chandigarh at ThinkNEXT Technologies, you'll move from LLM fundamentals to production-grade systems using LangChain, LangGraph, CrewAI and AutoGen — the same stack powering today's most advanced AI products.
+      </p>
+      <div class="mt-8 glass rounded-2xl p-5 flex items-start gap-4">
+        <div class="w-11 h-11 shrink-0 rounded-xl bg-gradient-to-br from-violet-600 to-fuchsia-500 grid place-items-center">
+          <svg viewBox="0 0 24 24" class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.8 4.9L19 9.7l-5.2 1.8L12 16.4l-1.8-4.9L5 9.7l5.2-1.8L12 3z"/><circle cx="19" cy="5" r="1" fill="currentColor" stroke="none"/></svg>
+        </div>
+        <p class="text-sm text-slate-300 leading-relaxed"><span class="text-white font-semibold">Chatbots answer. Agents act.</span> Learn to build software that completes entire workflows on its own — researching, deciding and delivering results.</p>
+      </div>
+    </div>
+
+    <!-- Agent loop diagram -->
+    <div class="reveal relative mx-auto w-full max-w-[400px]" style="transition-delay:.15s">
+      <div class="absolute inset-0 m-auto w-24 h-24 rounded-full bg-violet-600/20 blur-2xl"></div>
+      <div class="relative aspect-square">
+        <div class="absolute inset-6 rounded-full border border-dashed border-violet-500/40 ring-spin"></div>
+        <div class="absolute inset-16 rounded-full border border-cyan-400/20 ring-spin-rev"></div>
+        <!-- center -->
+        <div class="absolute inset-0 m-auto w-32 h-32 rounded-full glass grad-border grid place-items-center text-center">
+          <div>
+            <svg viewBox="0 0 24 24" class="w-7 h-7 mx-auto text-fuchsia-300" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.8 4.9L19 9.7l-5.2 1.8L12 16.4l-1.8-4.9L5 9.7l5.2-1.8L12 3z"/><circle cx="19" cy="5" r="1" fill="currentColor" stroke="none"/></svg>
+            <p class="mt-1.5 font-heading font-bold text-white text-sm">AI Agent</p>
+            <p class="text-[10px] text-slate-500 tracking-wider uppercase">Core Loop</p>
+          </div>
+        </div>
+        <!-- nodes -->
+        <div class="absolute left-1/2 -translate-x-1/2 top-0 w-24 h-24 glass rounded-2xl grid place-items-center text-center">
+          <div><svg viewBox="0 0 24 24" class="w-5 h-5 mx-auto text-violet-300" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6-10-6-10-6z"/><circle cx="12" cy="12" r="3"/></svg><p class="mt-1 text-xs font-semibold text-white">Perceive</p><p class="text-[10px] text-slate-500">inputs &amp; goals</p></div>
+        </div>
+        <div class="absolute right-0 top-1/2 -translate-y-1/2 w-24 h-24 glass rounded-2xl grid place-items-center text-center">
+          <div><svg viewBox="0 0 24 24" class="w-5 h-5 mx-auto text-fuchsia-300" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M8 6h13M8 12h13M8 18h13"/><circle cx="4" cy="6" r="1" fill="currentColor" stroke="none"/><circle cx="4" cy="12" r="1" fill="currentColor" stroke="none"/><circle cx="4" cy="18" r="1" fill="currentColor" stroke="none"/></svg><p class="mt-1 text-xs font-semibold text-white">Plan</p><p class="text-[10px] text-slate-500">decompose tasks</p></div>
+        </div>
+        <div class="absolute left-1/2 -translate-x-1/2 bottom-0 w-24 h-24 glass rounded-2xl grid place-items-center text-center">
+          <div><svg viewBox="0 0 24 24" class="w-5 h-5 mx-auto text-cyan-300" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg><p class="mt-1 text-xs font-semibold text-white">Act</p><p class="text-[10px] text-slate-500">use tools &amp; APIs</p></div>
+        </div>
+        <div class="absolute left-0 top-1/2 -translate-y-1/2 w-24 h-24 glass rounded-2xl grid place-items-center text-center">
+          <div><svg viewBox="0 0 24 24" class="w-5 h-5 mx-auto text-emerald-300" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7"/><path d="M21 3v5h-5"/></svg><p class="mt-1 text-xs font-semibold text-white">Reflect</p><p class="text-[10px] text-slate-500">learn from results</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHAT WILL YOU LEARN ============ -->
+<section id="learn" class="relative py-20 lg:py-28 scroll-mt-24 border-y border-white/5 bg-white/[.015]">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+    <div class="max-w-2xl mx-auto text-center reveal">
+      <p class="flex items-center justify-center gap-3 text-[11px] sm:text-xs font-semibold uppercase tracking-[.3em] text-violet-300">
+        <span class="w-8 h-px bg-violet-400/70"></span>Curriculum Highlights<span class="w-8 h-px bg-violet-400/70"></span>
+      </p>
+      <h2 class="mt-5 font-heading text-3xl sm:text-4xl lg:text-[2.75rem] font-bold text-white leading-tight tracking-tight">
+        What Will You Learn in the <span class="text-gradient">Agentic AI Course</span> in Chandigarh?
+      </h2>
+      <p class="mt-5 text-slate-400 leading-relaxed">A structured path from AI fundamentals to deploying autonomous multi-agent systems — built for clarity and maximum hands-on practice.</p>
+    </div>
+
+    <div class="mt-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+      <div class="reveal feature-card glass rounded-2xl p-6">
+        <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-violet-600/30 to-fuchsia-500/20 border border-white/10 grid place-items-center text-violet-300"><svg viewBox="0 0 24 24" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.8 4.9L19 9.7l-5.2 1.8L12 16.4l-1.8-4.9L5 9.7l5.2-1.8L12 3z"/><circle cx="19" cy="5" r="1" fill="currentColor" stroke="none"/></svg></div>
+        <h3 class="mt-4 text-white font-semibold">AI Agent Fundamentals</h3>
+        <p class="mt-2 text-sm text-slate-400 leading-relaxed">Autonomy, reasoning loops, ReAct and Plan-and-Execute design patterns.</p>
+      </div>
+      <div class="reveal feature-card glass rounded-2xl p-6" style="transition-delay:.07s">
+        <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-violet-600/30 to-fuchsia-500/20 border border-white/10 grid place-items-center text-violet-300"><svg viewBox="0 0 24 24" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H8l-5 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+        <h3 class="mt-4 text-white font-semibold">LLMs &amp; Prompt Engineering</h3>
+        <p class="mt-2 text-sm text-slate-400 leading-relaxed">Work with GPT-4o, Claude &amp; Gemini. Master structured, reliable prompting.</p>
+      </div>
+      <div class="reveal feature-card glass rounded-2xl p-6" style="transition-delay:.14s">
+        <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-violet-600/30 to-fuchsia-500/20 border border-white/10 grid place-items-center text-violet-300"><svg viewBox="0 0 24 24" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg></div>
+        <h3 class="mt-4 text-white font-semibold">RAG &amp; Vector Databases</h3>
+        <p class="mt-2 text-sm text-slate-400 leading-relaxed">Embeddings, chunking, Pinecone, ChromaDB and production retrieval pipelines.</p>
+      </div>
+      <div class="reveal feature-card glass rounded-2xl p-6" style="transition-delay:.21s">
+        <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-violet-600/30 to-fuchsia-500/20 border border-white/10 grid place-items-center text-violet-300"><svg viewBox="0 0 24 24" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m8 8-4 4 4 4M16 8l4 4-4 4"/></svg></div>
+        <h3 class="mt-4 text-white font-semibold">Tools &amp; Function Calling</h3>
+        <p class="mt-2 text-sm text-slate-400 leading-relaxed">Let agents call APIs, search the web, run code and query databases.</p>
+      </div>
+      <div class="reveal feature-card glass rounded-2xl p-6">
+        <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-violet-600/30 to-fuchsia-500/20 border border-white/10 grid place-items-center text-violet-300"><svg viewBox="0 0 24 24" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M2.8 20c.5-3.4 3.1-5.5 6.2-5.5s5.7 2.1 6.2 5.5"/><circle cx="17.5" cy="9.5" r="2.6"/><path d="M16.2 14.6c2.8.2 4.6 2.1 5 5.4"/></svg></div>
+        <h3 class="mt-4 text-white font-semibold">Multi-Agent Orchestration</h3>
+        <p class="mt-2 text-sm text-slate-400 leading-relaxed">Design agent teams with CrewAI and AutoGen that delegate and collaborate.</p>
+      </div>
+      <div class="reveal feature-card glass rounded-2xl p-6" style="transition-delay:.07s">
+        <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-violet-600/30 to-fuchsia-500/20 border border-white/10 grid place-items-center text-violet-300"><svg viewBox="0 0 24 24" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="2.2"/><circle cx="5" cy="19" r="2.2"/><circle cx="19" cy="19" r="2.2"/><path d="M12 7.2 6.5 17M12 7.2 17.5 17M7 19h10"/></svg></div>
+        <h3 class="mt-4 text-white font-semibold">LangChain &amp; LangGraph</h3>
+        <p class="mt-2 text-sm text-slate-400 leading-relaxed">Build stateful agent graphs with memory and human-in-the-loop control.</p>
+      </div>
+      <div class="reveal feature-card glass rounded-2xl p-6" style="transition-delay:.14s">
+        <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-violet-600/30 to-fuchsia-500/20 border border-white/10 grid place-items-center text-violet-300"><svg viewBox="0 0 24 24" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.6-3 7.6-7 9.5C8 18.6 5 15.6 5 11V6l7-3z"/><path d="m9 11.5 2 2 4-4"/></svg></div>
+        <h3 class="mt-4 text-white font-semibold">Guardrails &amp; Evaluation</h3>
+        <p class="mt-2 text-sm text-slate-400 leading-relaxed">Safety, hallucination control, agent evals, tracing and monitoring.</p>
+      </div>
+      <div class="reveal feature-card glass rounded-2xl p-6" style="transition-delay:.21s">
+        <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-violet-600/30 to-fuchsia-500/20 border border-white/10 grid place-items-center text-violet-300"><svg viewBox="0 0 24 24" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4 20-7z"/></svg></div>
+        <h3 class="mt-4 text-white font-semibold">Deployment &amp; Scaling</h3>
+        <p class="mt-2 text-sm text-slate-400 leading-relaxed">Ship agents with FastAPI, Streamlit &amp; Docker. Optimize cost and latency.</p>
+      </div>
+    </div>
+    <div class="mt-10 text-center reveal">
+      <a href="#curriculum" class="btn-ghost inline-flex items-center gap-2 text-white font-semibold px-6 py-3 rounded-xl text-sm">
+        Jump to the Full Curriculum
+        <svg viewBox="0 0 24 24" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CURRICULUM ============ -->
+<section id="curriculum" class="relative py-20 lg:py-28 scroll-mt-24 overflow-hidden">
+  <div class="blob absolute -top-20 -left-40 w-[420px] h-[420px] rounded-full bg-fuchsia-700/15"></div>
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 relative">
+    <div class="max-w-2xl mx-auto text-center reveal">
+      <p class="flex items-center justify-center gap-3 text-[11px] sm:text-xs font-semibold uppercase tracking-[.3em] text-violet-300">
+        <span class="w-8 h-px bg-violet-400/70"></span>Syllabus<span class="w-8 h-px bg-violet-400/70"></span>
+      </p>
+      <h2 class="mt-5 font-heading text-3xl sm:text-4xl lg:text-[2.75rem] font-bold text-white leading-tight tracking-tight">
+        Agentic AI Training <span class="text-gradient">Course Curriculum</span>
+      </h2>
+      <div class="mt-6 flex flex-wrap justify-center gap-2.5 text-xs text-slate-400">
+        <span class="chip">📚 8 Modules</span>
+        <span class="chip">⏱ ~19 Weeks</span>
+        <span class="chip">🛠 20+ Projects</span>
+        <span class="chip">🗓 Weekday &amp; Weekend Batches</span>
+      </div>
+      <button class="js-enroll btn-primary mt-8 inline-flex items-center gap-2 text-white font-semibold px-6 py-3 rounded-xl text-sm" data-title="Get the Detailed Agentic AI Syllabus">
+        Get Detailed Syllabus PDF
+        <svg viewBox="0 0 24 24" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M6 11l6 6 6-6M4 21h16"/></svg>
+      </button>
+    </div>
+
+    <div class="max-w-4xl mx-auto mt-12 space-y-4" data-acc-group>
+      <!-- M1 -->
+      <div class="acc-item open glass rounded-2xl overflow-hidden reveal">
+        <button class="acc-head w-full flex items-center gap-4 p-5 text-left border-b border-white/5 transition-colors" data-acc aria-expanded="true">
+          <span class="w-9 h-9 shrink-0 rounded-lg bg-violet-500/15 border border-violet-400/25 text-violet-300 font-mono grid place-items-center text-sm">01</span>
+          <span class="flex-1 min-w-0">
+            <span class="block text-white font-semibold text-[15px] sm:text-base">Python, APIs &amp; AI Foundations</span>
+            <span class="block text-xs text-slate-500 mt-0.5">2 weeks · groundwork for everything agents</span>
+          </span>
+          <span class="acc-icon w-8 h-8 shrink-0 grid place-items-center rounded-full border border-white/10 text-slate-300"><svg viewBox="0 0 24 24" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+        </button>
+        <div class="acc-body">
+          <ul class="grid sm:grid-cols-2 gap-x-8 gap-y-2.5 p-5 text-sm text-slate-400">
+            <li class="flex gap-2.5"><svg viewBox="0 0 24 24" class="w-4 h-4 mt-0.5 shrink-0 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg>Python for AI: data structures, functions, OOP</li>
+            <li class="flex gap-2.5"><svg viewBox="0 0 24 24" class="w-4 h-4 mt-0.5 shrink-0 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg>Working with REST APIs &amp; JSON</li>
+            <li class="flex gap-2.5"><svg viewBox="0 0 24 24" class="w-4 h-4 mt-0.5 shrink-0 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg>Setup: VS Code, Jupyter, Git &amp; GitHub</li>
+            <li class="flex gap-2.5"><svg viewBox="0 0 24 24" class="w-4 h-4 mt-0.5 shrink-0 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg>Intro to AI, ML &amp; the modern LLM landscape</li>
+          </ul>
+        </div>
+      </div>
+      <!-- M2 -->
+      <div class="acc-item glass rounded-2xl overflow-hidden reveal" style="transition-delay:.05s">
+        <button class="acc-head w-full flex items-center gap-4 p-5 text-left border-b border-white/5 transition-colors" data-acc aria-expanded="false">
+          <span class="w-9 h-9 shrink-0 rounded-lg bg-violet-500/15 border border-violet-400/25 text-violet-300 font-mono grid place-items-center text-sm">02</span>
+          <span class="flex-1 min-w-0">
+            <span class="block text-white font-semibold text-[15px] sm:text-base">LLMs &amp; Prompt Engineering</span>
+            <span class="block text-xs text-slate-500 mt-0.5">2 weeks · talk to models like a pro</span>
+          </span>
+          <span class="acc-icon w-8 h-8 shrink-0 grid place-items-center rounded-full border border-white/10 text-slate-300"><svg viewBox="0 0 24 24" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+        </button>
+        <div class="acc-body">
+          <ul class="grid sm:grid-cols-2 gap-x-8 gap-y-2.5 p-5 text-sm text-slate-400">
+            <li class="flex gap-2.5"><svg viewBox="0 0 24 24" class="w-4 h-4 mt-0.5 shrink-0 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg>How LLMs work: tokens, context, temperature</li>
+            <li class="flex gap-2.5"><svg viewBox="0 0 24 24" class="w-4 h-4 mt-0.5 shrink-0 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg>Zero-shot, few-shot &amp; chain-of-thought prompting</li>
+            <li class="flex gap-2.5"><svg viewBox="0 0 24 24" class="w-4 h-4 mt-0.5 shrink-0 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg>OpenAI, Anthropic &amp; Gemini APIs hands-on</li>
+            <li class="flex gap-2.5"><svg viewBox="0 0 24 24" class="w-4 h-4 mt-0.5 shrink-0 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg>Structured outputs, JSON mode &amp; output parsing</li>
+          </ul>
+        </div>
+      </div>
+      <!-- M3 -->
+      <div class="acc-item glass rounded-2xl overflow-hidden reveal" style="transition-delay:.1s">
+        <button class="acc-head w-full flex items-center gap-4 p-5 text-left border-b border-white/5 transition-colors" data-acc aria-expanded="false">
+          <span class="w-9 h-9 shrink-0 rounded-lg bg-violet-500/15 border border-violet-400/25 text-violet-300 font-mono grid place-items-center text-sm">03</span>
+          <span class="flex-1 min-w-0">
+            <span class="block text-white font-semibold text-[15px] sm:text-base">Introduction to Agentic AI &amp; Design Patterns</span>
+            <span class="block text-xs text-slate-500 mt-0.5">1 week · what makes an agent an agent</span>
+          </span>
+          <span class="acc-icon w-8 h-8 shrink-0 grid place-items-center rounded-full border border-white/10 text-slate-300"><svg viewBox="0 0 24 24" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+        </button>
+        <div class="acc-body">
+          <ul class="grid sm:grid-cols-2 gap-x-8 gap-y-2.5 p-5 text-sm text-slate-400">
+            <li class="flex gap-2.5"><svg viewBox="0 0 24 24" class="w-4 h-4 mt-0.5 shrink-0 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg>Reasoning loops, autonomy &amp; tool use</li>
+            <li class="flex gap-2.5"><svg viewBox="0 0 24 24" class="w-4 h-4 mt-0.5 shrink-0 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg>ReAct, Plan-and-Execute &amp; Reflection patterns</li>
+            <li class="flex gap-2.5"><svg viewBox="0 0 24 24" class="w-4 h-4 mt-0.5 shrink-0 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg>Agent architectures &amp; orchestration overview</li>
+            <li class="flex gap-2.5"><svg viewBox="0 0 24 24" class="w-4 h-4 mt-0.5 shrink-0 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg>Real use-cases across industries</li>
+          </ul>
+        </div>
+      </div>
+      <!-- M4 -->
+      <div class="acc-item glass rounded-2xl overflow-hidden reveal" style="transition-delay:.15s">
+        <button class="acc-head w-full flex items-center gap-4 p-5 text-left border-b border-white/5 transition-colors" data-acc aria-expanded="false">
+          <span class="w-9 h-9 shrink-0 rounded-lg bg-violet-500/15 border border-violet-400/25 text-violet-300 font-mono grid place-items-center text-sm">04</span>
+          <span class="flex-1 min-w-0">
+            <span class="block text-white font-semibold text-[15px] sm:text-base">Building Agents with LangChain &amp; LangGraph</span>
+            <span class="block text-xs text-slate-500 mt-0.5">3 weeks · the core of the course</span>
+          </span>
+          <span class="acc-icon w-8 h-8 shrink-0 grid place-items-center rounded-full border border-white/10 text-slate-300"><svg viewBox="0 0 24 24" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+        </button>
+        <div class="acc-body">
+          <ul class="grid sm:grid-cols-2 gap-x-8 gap-y-2.5 p-5 text-sm text-slate-400">
+            <li class="flex gap-2.5"><svg viewBox="0 0 24 24" class="w-4 h-4 mt-0.5 shrink-0 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg>Chains, prompts &amp; memory in LangChain</li>
+            <li class="flex gap-2.5"><svg viewBox="0 0 24 24" class="w-4 h-4 mt-0.5 shrink-0 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg>LangGraph: state machines, graphs &amp; cycles</li>
+            <li class="flex gap-2.5"><svg viewBox="0 0 24 24" class="w-4 h-4 mt-0.5 shrink-0 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg>Human-in-the-loop workflows &amp; checkpoints</li>
+            <li class="flex gap-2.5"><svg viewBox="0 0 24 24" class="w-4 h-4 mt-0.5 shrink-0 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg>Debugging &amp; tracing with LangSmith</li>
+          </ul>
+        </div>
+      </div>
+      <!-- M5 -->
+      <div class="acc-item glass rounded-2xl overflow-hidden reveal" style="transition-delay:.2s">
+        <button class="acc-head w-full flex items-center gap-4 p-5 text-left border-b border-white/5 transition-colors" data-acc aria-expanded="false">
+          <span class="w-9 h-9 shrink-0 rounded-lg bg-violet-500/15 border border-violet-400/25 text-violet-300 font-mono grid place-items-center text-sm">05</span>
+          <span class="flex-1 min-w-0">
+            <span class="block text-white font-semibold text-[15px] sm:text-base">RAG &amp; Knowledge Systems</span>
+            <span class="block text-xs text-slate-500 mt-0.5">3 weeks · give agents private knowledge</span>
+          </span>
+          <span class="acc-icon w-8 h-8 shrink-0 grid place-items-center rounded-full border border-white/10 text-slate-300"><svg viewBox="0 0 24 24" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+        </button>
+        <div class="acc-body">
+          <ul class="grid sm:grid-cols-2 gap-x-8 gap-y-2.5 p-5 text-sm text-slate-400">
+            <li class="flex gap-2.5"><svg viewBox="0 0 24 24" class="w-4 h-4 mt-0.5 shrink-0 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg>Embeddings &amp; vector databases (Pinecone, Chroma, FAISS)</li>
+            <li class="flex gap-2.5"><svg viewBox="0 0 24 24" class="w-4 h-4 mt-0.5 shrink-0 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg>Chunking, indexing &amp; retrieval strategies</li>
+            <li class="flex gap-2.5"><svg viewBox="0 0 24 24" class="w-4 h-4 mt-0.5 shrink-0 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg>Building production-grade RAG pipelines</li>
+            <li class="flex gap-2.5"><svg viewBox="0 0 24 24" class="w-4 h-4 mt-0.5 shrink-0 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg>Hybrid search, reranking &amp; RAG evaluation</li>
+          </ul>
+        </div>
+      </div>
+      <!-- M6 -->
+      <div class="acc-item glass rounded-2xl overflow-hidden reveal" style="transition-delay:.25s">
+        <button class="acc-head w-full flex items-center gap-4 p-5 text-left border-b border-white/5 transition-colors" data-acc aria-expanded="false">
+          <span class="w-9 h-9 shrink-0 rounded-lg bg-violet-500/15 border border-violet-400/25 text-violet-300 font-mono grid place-items-center text-sm">06</span>
+          <span class="flex-1 min-w-0">
+            <span class="block text-white font-semibold text-[15px] sm:text-base">Tools, Function Calling &amp; MCP</span>
+            <span class="block text-xs text-slate-500 mt-0.5">2 weeks · connect agents to the real world</span>
+          </span>
+          <span class="acc-icon w-8 h-8 shrink-0 grid place-items-center rounded-full border border-white/10 text-slate-300"><svg viewBox="0 0 24 24" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+        </button>
+        <div class="acc-body">
+          <ul class="grid sm:grid-cols-2 gap-x-8 gap-y-2.5 p-5 text-sm text-slate-400">
+            <li class="flex gap-2.5"><svg viewBox="0 0 24 24" class="w-4 h-4 mt-0.5 shrink-0 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg>Function calling &amp; tool use with LLMs</li>
+            <li class="flex gap-2.5"><svg viewBox="0 0 24 24" class="w-4 h-4 mt-0.5 shrink-0 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg>Custom tools: search, code interpreter, databases</li>
+            <li class="flex gap-2.5"><svg viewBox="0 0 24 24" class="w-4 h-4 mt-0.5 shrink-0 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg>Model Context Protocol (MCP) fundamentals</li>
+            <li class="flex gap-2.5"><svg viewBox="0 0 24 24" class="w-4 h-4 mt-0.5 shrink-0 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg>Wiring agents into real software &amp; APIs</li>
+          </ul>
+        </div>
+      </div>
+      <!-- M7 -->
+      <div class="acc-item glass rounded-2xl overflow-hidden reveal" style="transition-delay:.3s">
+        <button class="acc-head w-full flex items-center gap-4 p-5 text-left border-b border-white/5 transition-colors" data-acc aria-expanded="false">
+          <span class="w-9 h-9 shrink-0 rounded-lg bg-violet-500/15 border border-violet-400/25 text-violet-300 font-mono grid place-items-center text-sm">07</span>
+          <span class="flex-1 min-w-0">
+            <span class="block text-white font-semibold text-[15px] sm:text-base">Multi-Agent Systems &amp; Automation</span>
+            <span class="block text-xs text-slate-500 mt-0.5">3 weeks · agent teams that work together</span>
+          </span>
+          <span class="acc-icon w-8 h-8 shrink-0 grid place-items-center rounded-full border border-white/10 text-slate-300"><svg viewBox="0 0 24 24" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+        </button>
+        <div class="acc-body">
+          <ul class="grid sm:grid-cols-2 gap-x-8 gap-y-2.5 p-5 text-sm text-slate-400">
+            <li class="flex gap-2.5"><svg viewBox="0 0 24 24" class="w-4 h-4 mt-0.5 shrink-0 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg>CrewAI &amp; AutoGen: roles, tasks, crews</li>
+            <li class="flex gap-2.5"><svg viewBox="0 0 24 24" class="w-4 h-4 mt-0.5 shrink-0 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg>Agent-to-agent communication &amp; delegation</li>
+            <li class="flex gap-2.5"><svg viewBox="0 0 24 24" class="w-4 h-4 mt-0.5 shrink-0 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg>Workflow automation with n8n &amp; Zapier</li>
+            <li class="flex gap-2.5"><svg viewBox="0 0 24 24" class="w-4 h-4 mt-0.5 shrink-0 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg>Guardrails, safety &amp; agent evaluation</li>
+          </ul>
+        </div>
+      </div>
+      <!-- M8 -->
+      <div class="acc-item glass rounded-2xl overflow-hidden reveal" style="transition-delay:.35s">
+        <button class="acc-head w-full flex items-center gap-4 p-5 text-left border-b border-white/5 transition-colors" data-acc aria-expanded="false">
+          <span class="w-9 h-9 shrink-0 rounded-lg bg-fuchsia-500/15 border border-fuchsia-400/25 text-fuchsia-300 font-mono grid place-items-center text-sm">08</span>
+          <span class="flex-1 min-w-0">
+            <span class="block text-white font-semibold text-[15px] sm:text-base">Capstone Projects &amp; Deployment</span>
+            <span class="block text-xs text-slate-500 mt-0.5">3 weeks · build, ship &amp; showcase</span>
+          </span>
+          <span class="acc-icon w-8 h-8 shrink-0 grid place-items-center rounded-full border border-white/10 text-slate-300"><svg viewBox="0 0 24 24" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+        </button>
+        <div class="acc-body">
+          <ul class="grid sm:grid-cols-2 gap-x-8 gap-y-2.5 p-5 text-sm text-slate-400">
+            <li class="flex gap-2.5"><svg viewBox="0 0 24 24" class="w-4 h-4 mt-0.5 shrink-0 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg>Build 6 portfolio-grade AI agents</li>
+            <li class="flex gap-2.5"><svg viewBox="0 0 24 24" class="w-4 h-4 mt-0.5 shrink-0 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg>FastAPI, Streamlit &amp; cloud deployment</li>
+            <li class="flex gap-2.5"><svg viewBox="0 0 24 24" class="w-4 h-4 mt-0.5 shrink-0 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg>Docker, monitoring &amp; cost optimization</li>
+            <li class="flex gap-2.5"><svg viewBox="0 0 24 24" class="w-4 h-4 mt-0.5 shrink-0 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg>Demo day, code review &amp; certification</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TOOLS ============ -->
+<section id="tools" class="relative py-20 lg:py-28 scroll-mt-24 border-y border-white/5 bg-white/[.015]">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+    <div class="max-w-2xl mx-auto text-center reveal">
+      <p class="flex items-center justify-center gap-3 text-[11px] sm:text-xs font-semibold uppercase tracking-[.3em] text-violet-300">
+        <span class="w-8 h-px bg-violet-400/70"></span>The Stack<span class="w-8 h-px bg-violet-400/70"></span>
+      </p>
+      <h2 class="mt-5 font-heading text-3xl sm:text-4xl lg:text-[2.75rem] font-bold text-white leading-tight tracking-tight">
+        Tools &amp; Technologies <span class="text-gradient">You'll Master</span>
+      </h2>
+      <p class="mt-5 text-slate-400 leading-relaxed">Hands-on practice with the exact models, frameworks and platforms used by top AI engineering teams today.</p>
+    </div>
+
+    <div class="mt-12 space-y-4 reveal" style="transition-delay:.1s">
+      <div class="marquee">
+        <div class="marquee-track">
+          <div class="marquee-group">
+            <span class="chip text-sm py-2.5 px-5"><span class="w-2 h-2 rounded-full bg-cyan-400"></span>Python</span>
+            <span class="chip text-sm py-2.5 px-5"><span class="w-2 h-2 rounded-full bg-violet-400"></span>OpenAI API</span>
+            <span class="chip text-sm py-2.5 px-5"><span class="w-2 h-2 rounded-full bg-violet-400"></span>Anthropic Claude</span>
+            <span class="chip text-sm py-2.5 px-5"><span class="w-2 h-2 rounded-full bg-violet-400"></span>Google Gemini</span>
+            <span class="chip text-sm py-2.5 px-5"><span class="w-2 h-2 rounded-full bg-fuchsia-400"></span>LangChain</span>
+            <span class="chip text-sm py-2.5 px-5"><span class="w-2 h-2 rounded-full bg-fuchsia-400"></span>LangGraph</span>
+            <span class="chip text-sm py-2.5 px-5"><span class="w-2 h-2 rounded-full bg-fuchsia-400"></span>CrewAI</span>
+            <span class="chip text-sm py-2.5 px-5"><span class="w-2 h-2 rounded-full bg-fuchsia-400"></span>AutoGen</span>
+            <span class="chip text-sm py-2.5 px-5"><span class="w-2 h-2 rounded-full bg-amber-400"></span>Hugging Face</span>
+            <span class="chip text-sm py-2.5 px-5"><span class="w-2 h-2 rounded-full bg-amber-400"></span>Ollama</span>
+            <span class="chip text-sm py-2.5 px-5"><span class="w-2 h-2 rounded-full bg-fuchsia-400"></span>LlamaIndex</span>
+          </div>
+        </div>
+      </div>
+      <div class="marquee">
+        <div class="marquee-track rev">
+          <div class="marquee-group">
+            <span class="chip text-sm py-2.5 px-5"><span class="w-2 h-2 rounded-full bg-cyan-400"></span>Pinecone</span>
+            <span class="chip text-sm py-2.5 px-5"><span class="w-2 h-2 rounded-full bg-cyan-400"></span>ChromaDB</span>
+            <span class="chip text-sm py-2.5 px-5"><span class="w-2 h-2 rounded-full bg-cyan-400"></span>FAISS</span>
+            <span class="chip text-sm py-2.5 px-5"><span class="w-2 h-2 rounded-full bg-emerald-400"></span>FastAPI</span>
+            <span class="chip text-sm py-2.5 px-5"><span class="w-2 h-2 rounded-full bg-emerald-400"></span>Streamlit</span>
+            <span class="chip text-sm py-2.5 px-5"><span class="w-2 h-2 rounded-full bg-emerald-400"></span>Docker</span>
+            <span class="chip text-sm py-2.5 px-5"><span class="w-2 h-2 rounded-full bg-emerald-400"></span>n8n</span>
+            <span class="chip text-sm py-2.5 px-5"><span class="w-2 h-2 rounded-full bg-emerald-400"></span>Zapier</span>
+            <span class="chip text-sm py-2.5 px-5"><span class="w-2 h-2 rounded-full bg-violet-400"></span>MCP</span>
+            <span class="chip text-sm py-2.5 px-5"><span class="w-2 h-2 rounded-full bg-amber-400"></span>Whisper</span>
+            <span class="chip text-sm py-2.5 px-5"><span class="w-2 h-2 rounded-full bg-slate-400"></span>Git &amp; GitHub</span>
+            <span class="chip text-sm py-2.5 px-5"><span class="w-2 h-2 rounded-full bg-amber-400"></span>Postman</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="mt-6 text-center text-sm text-slate-500 reveal">…plus 15+ more industry tools covered inside the course.</p>
+
+    <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+      <div class="reveal glass rounded-2xl p-6">
+        <p class="flex items-center gap-2 text-white font-semibold text-sm"><span class="w-2.5 h-2.5 rounded-full bg-violet-400"></span>AI Models &amp; APIs</p>
+        <p class="mt-3 text-sm text-slate-400 leading-relaxed">GPT-4o · Claude · Gemini · Llama · Ollama · OpenAI function calling</p>
+      </div>
+      <div class="reveal glass rounded-2xl p-6" style="transition-delay:.08s">
+        <p class="flex items-center gap-2 text-white font-semibold text-sm"><span class="w-2.5 h-2.5 rounded-full bg-fuchsia-400"></span>Agent Frameworks</p>
+        <p class="mt-3 text-sm text-slate-400 leading-relaxed">LangChain · LangGraph · CrewAI · AutoGen · LlamaIndex</p>
+      </div>
+      <div class="reveal glass rounded-2xl p-6" style="transition-delay:.16s">
+        <p class="flex items-center gap-2 text-white font-semibold text-sm"><span class="w-2.5 h-2.5 rounded-full bg-cyan-400"></span>Data &amp; Retrieval</p>
+        <p class="mt-3 text-sm text-slate-400 leading-relaxed">Pinecone · ChromaDB · FAISS · Embeddings · Rerankers</p>
+      </div>
+      <div class="reveal glass rounded-2xl p-6" style="transition-delay:.24s">
+        <p class="flex items-center gap-2 text-white font-semibold text-sm"><span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span>Build, Ship &amp; Automate</p>
+        <p class="mt-3 text-sm text-slate-400 leading-relaxed">Python · FastAPI · Streamlit · Docker · n8n · MCP</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section id="projects" class="relative py-20 lg:py-28 scroll-mt-24 overflow-hidden">
+  <div class="blob absolute top-1/4 -right-44 w-[420px] h-[420px] rounded-full bg-cyan-600/15"></div>
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 relative">
+    <div class="max-w-2xl mx-auto text-center reveal">
+      <p class="flex items-center justify-center gap-3 text-[11px] sm:text-xs font-semibold uppercase tracking-[.3em] text-violet-300">
+        <span class="w-8 h-px bg-violet-400/70"></span>Portfolio<span class="w-8 h-px bg-violet-400/70"></span>
+      </p>
+      <h2 class="mt-5 font-heading text-3xl sm:text-4xl lg:text-[2.75rem] font-bold text-white leading-tight tracking-tight">
+        Build Real-World <span class="text-gradient">Agentic AI Projects</span>
+      </h2>
+      <p class="mt-5 text-slate-400 leading-relaxed">Every module ends with a production-style build. Graduate with a GitHub portfolio that proves your skills to recruiters — not just a certificate.</p>
+    </div>
+
+    <div class="mt-14 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="reveal project-card group glass rounded-2xl p-6 relative overflow-hidden">
+        <span class="absolute top-0 inset-x-0 h-[2px] bg-gradient-to-r from-violet-500 via-fuchsia-400 to-cyan-400 opacity-0 group-hover:opacity-100 transition"></span>
+        <p class="font-mono text-[11px] tracking-[.2em] text-fuchsia-300/80">PROJECT 01</p>
+        <h3 class="mt-3 text-white text-lg font-semibold">Customer Support Agent</h3>
+        <p class="mt-2 text-sm text-slate-400 leading-relaxed flex-1">A RAG-powered bot that resolves tickets, answers from your own docs and escalates intelligently to humans.</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="text-[11px] uppercase tracking-wider px-2.5 py-1 rounded-md bg-white/5 border border-white/10 text-slate-300">RAG</span><span class="text-[11px] uppercase tracking-wider px-2.5 py-1 rounded-md bg-white/5 border border-white/10 text-slate-300">Tools</span></div>
+      </div>
+      <div class="reveal project-card group glass rounded-2xl p-6 relative overflow-hidden" style="transition-delay:.08s">
+        <span class="absolute top-0 inset-x-0 h-[2px] bg-gradient-to-r from-violet-500 via-fuchsia-400 to-cyan-400 opacity-0 group-hover:opacity-100 transition"></span>
+        <p class="font-mono text-[11px] tracking-[.2em] text-fuchsia-300/80">PROJECT 02</p>
+        <h3 class="mt-3 text-white text-lg font-semibold">Deep Research Assistant</h3>
+        <p class="mt-2 text-sm text-slate-400 leading-relaxed flex-1">A planning agent that searches the web, cross-checks multiple sources and writes fully-cited research reports.</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="text-[11px] uppercase tracking-wider px-2.5 py-1 rounded-md bg-white/5 border border-white/10 text-slate-300">Planning</span><span class="text-[11px] uppercase tracking-wider px-2.5 py-1 rounded-md bg-white/5 border border-white/10 text-slate-300">Web Search</span></div>
+      </div>
+      <div class="reveal project-card group glass rounded-2xl p-6 relative overflow-hidden" style="transition-delay:.16s">
+        <span class="absolute top-0 inset-x-0 h-[2px] bg-gradient-to-r from-violet-500 via-fuchsia-400 to-cyan-400 opacity-0 group-hover:opacity-100 transition"></span>
+        <p class="font-mono text-[11px] tracking-[.2em] text-fuchsia-300/80">PROJECT 03</p>
+        <h3 class="mt-3 text-white text-lg font-semibold">Multi-Agent Content Studio</h3>
+        <p class="mt-2 text-sm text-slate-400 leading-relaxed flex-1">Writer, editor and critic agents collaborate in a CrewAI crew to produce polished, on-brand content.</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="text-[11px] uppercase tracking-wider px-2.5 py-1 rounded-md bg-white/5 border border-white/10 text-slate-300">CrewAI</span><span class="text-[11px] uppercase tracking-wider px-2.5 py-1 rounded-md bg-white/5 border border-white/10 text-slate-300">Multi-Agent</span></div>
+      </div>
+      <div class="reveal project-card group glass rounded-2xl p-6 relative overflow-hidden">
+        <span class="absolute top-0 inset-x-0 h-[2px] bg-gradient-to-r from-violet-500 via-fuchsia-400 to-cyan-400 opacity-0 group-hover:opacity-100 transition"></span>
+        <p class="font-mono text-[11px] tracking-[.2em] text-fuchsia-300/80">PROJECT 04</p>
+        <h3 class="mt-3 text-white text-lg font-semibold">HR Resume Screening Agent</h3>
+        <p class="mt-2 text-sm text-slate-400 leading-relaxed flex-1">Parses resumes, scores candidates against job descriptions and shortlists the top talent automatically.</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="text-[11px] uppercase tracking-wider px-2.5 py-1 rounded-md bg-white/5 border border-white/10 text-slate-300">Function Calling</span><span class="text-[11px] uppercase tracking-wider px-2.5 py-1 rounded-md bg-white/5 border border-white/10 text-slate-300">Docs</span></div>
+      </div>
+      <div class="reveal project-card group glass rounded-2xl p-6 relative overflow-hidden" style="transition-delay:.08s">
+        <span class="absolute top-0 inset-x-0 h-[2px] bg-gradient-to-r from-violet-500 via-fuchsia-400 to-cyan-400 opacity-0 group-hover:opacity-100 transition"></span>
+        <p class="font-mono text-[11px] tracking-[.2em] text-fuchsia-300/80">PROJECT 05</p>
+        <h3 class="mt-3 text-white text-lg font-semibold">Finance Insights Agent</h3>
+        <p class="mt-2 text-sm text-slate-400 leading-relaxed flex-1">Analyzes transactions, builds charts and delivers a weekly money report with actionable insights.</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="text-[11px] uppercase tracking-wider px-2.5 py-1 rounded-md bg-white/5 border border-white/10 text-slate-300">Data</span><span class="text-[11px] uppercase tracking-wider px-2.5 py-1 rounded-md bg-white/5 border border-white/10 text-slate-300">Automation</span></div>
+      </div>
+      <div class="reveal project-card group glass rounded-2xl p-6 relative overflow-hidden" style="transition-delay:.16s">
+        <span class="absolute top-0 inset-x-0 h-[2px] bg-gradient-to-r from-violet-500 via-fuchsia-400 to-cyan-400 opacity-0 group-hover:opacity-100 transition"></span>
+        <p class="font-mono text-[11px] tracking-[.2em] text-fuchsia-300/80">PROJECT 06 · CAPSTONE</p>
+        <h3 class="mt-3 text-white text-lg font-semibold">WhatsApp Ops Bot</h3>
+        <p class="mt-2 text-sm text-slate-400 leading-relaxed flex-1">A fully deployed agent handling real customer conversations end-to-end — from intent to resolution.</p>
+        <div class="mt-4 flex flex-wrap gap-2"><span class="text-[11px] uppercase tracking-wider px-2.5 py-1 rounded-md bg-white/5 border border-white/10 text-slate-300">Deployment</span><span class="text-[11px] uppercase tracking-wider px-2.5 py-1 rounded-md bg-white/5 border border-white/10 text-slate-300">APIs</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHO SHOULD JOIN ============ -->
+<section id="who" class="relative py-20 lg:py-28 scroll-mt-24 border-y border-white/5 bg-white/[.015]">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+    <div class="max-w-2xl mx-auto text-center reveal">
+      <p class="flex items-center justify-center gap-3 text-[11px] sm:text-xs font-semibold uppercase tracking-[.3em] text-violet-300">
+        <span class="w-8 h-px bg-violet-400/70"></span>Is this for you?<span class="w-8 h-px bg-violet-400/70"></span>
+      </p>
+      <h2 class="mt-5 font-heading text-3xl sm:text-4xl lg:text-[2.75rem] font-bold text-white leading-tight tracking-tight">
+        Who Should Join an <span class="text-gradient">Agentic AI Course?</span>
+      </h2>
+      <p class="mt-5 text-slate-400 leading-relaxed">If you can think logically and are willing to practice, this course is built for you.</p>
+    </div>
+
+    <div class="mt-14 grid sm:grid-cols-2 lg:grid-cols-5 gap-5">
+      <div class="reveal feature-card glass rounded-2xl p-5">
+        <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-violet-600/30 to-fuchsia-500/20 border border-white/10 grid place-items-center text-violet-300"><svg viewBox="0 0 24 24" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4 2.5 9 12 14l9.5-5L12 4z"/><path d="M6 11.5V16c0 1.7 2.7 3 6 3s6-1.3 6-3v-4.5"/></svg></div>
+        <h3 class="mt-4 text-white font-semibold text-[15px]">Students &amp; Freshers</h3>
+        <p class="mt-2 text-[13px] text-slate-400 leading-relaxed">Start your career with the most in-demand AI skill set of 2025 — no experience needed.</p>
+      </div>
+      <div class="reveal feature-card glass rounded-2xl p-5" style="transition-delay:.08s">
+        <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-violet-600/30 to-fuchsia-500/20 border border-white/10 grid place-items-center text-violet-300"><svg viewBox="0 0 24 24" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m8 8-4 4 4 4M16 8l4 4-4 4"/></svg></div>
+        <h3 class="mt-4 text-white font-semibold text-[15px]">Software Developers</h3>
+        <p class="mt-2 text-[13px] text-slate-400 leading-relaxed">Add autonomous agents, RAG and LLM APIs to your existing dev toolkit.</p>
+      </div>
+      <div class="reveal feature-card glass rounded-2xl p-5" style="transition-delay:.16s">
+        <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-violet-600/30 to-fuchsia-500/20 border border-white/10 grid place-items-center text-violet-300"><svg viewBox="0 0 24 24" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 20V12M12 20V6M19 20v-8M3 20h18"/></svg></div>
+        <h3 class="mt-4 text-white font-semibold text-[15px]">Data Analysts &amp; Engineers</h3>
+        <p class="mt-2 text-[13px] text-slate-400 leading-relaxed">Upgrade from dashboards to self-driving AI pipelines and copilots.</p>
+      </div>
+      <div class="reveal feature-card glass rounded-2xl p-5" style="transition-delay:.24s">
+        <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-violet-600/30 to-fuchsia-500/20 border border-white/10 grid place-items-center text-violet-300"><svg viewBox="0 0 24 24" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="12" rx="2"/><path d="M9 8V6a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18"/></svg></div>
+        <h3 class="mt-4 text-white font-semibold text-[15px]">Working Professionals</h3>
+        <p class="mt-2 text-[13px] text-slate-400 leading-relaxed">Weekend batches and recorded sessions make switching to AI realistic.</p>
+      </div>
+      <div class="reveal feature-card glass rounded-2xl p-5" style="transition-delay:.32s">
+        <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-violet-600/30 to-fuchsia-500/20 border border-white/10 grid place-items-center text-violet-300"><svg viewBox="0 0 24 24" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 1 3.5 10.9c-.6.5-1 1.3-1 2.1h-5c0-.8-.4-1.6-1-2.1A6 6 0 0 1 12 3z"/></svg></div>
+        <h3 class="mt-4 text-white font-semibold text-[15px]">Entrepreneurs &amp; Freelancers</h3>
+        <p class="mt-2 text-[13px] text-slate-400 leading-relaxed">Automate business workflows and sell high-value AI agent services.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS & CAREERS ============ -->
+<section id="careers" class="relative py-20 lg:py-28 scroll-mt-24 overflow-hidden">
+  <div class="blob absolute -bottom-32 -left-40 w-[440px] h-[440px] rounded-full bg-fuchsia-700/15"></div>
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 relative">
+    <div class="max-w-2xl mx-auto text-center reveal">
+      <p class="flex items-center justify-center gap-3 text-[11px] sm:text-xs font-semibold uppercase tracking-[.3em] text-violet-300">
+        <span class="w-8 h-px bg-violet-400/70"></span>Outcomes<span class="w-8 h-px bg-violet-400/70"></span>
+      </p>
+      <h2 class="mt-5 font-heading text-3xl sm:text-4xl lg:text-[2.75rem] font-bold text-white leading-tight tracking-tight">
+        Agentic AI Skills &amp; <span class="text-gradient">Career Opportunities</span>
+      </h2>
+      <p class="mt-5 text-slate-400 leading-relaxed">The exact skills recruiters are hiring for in 2025 — and the roles you can target after Agentic AI training.</p>
+    </div>
+
+    <div class="mt-14 grid lg:grid-cols-2 gap-8">
+      <!-- Skills -->
+      <div class="reveal glass rounded-3xl p-7 sm:p-8">
+        <h3 class="text-white font-heading font-bold text-xl flex items-center gap-3">
+          <span class="w-9 h-9 rounded-lg bg-gradient-to-br from-violet-600/40 to-fuchsia-500/30 border border-white/10 grid place-items-center"><svg viewBox="0 0 24 24" class="w-4 h-4 text-fuchsia-300" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg></span>
+          Skills You'll Walk Away With
+        </h3>
+        <div class="mt-6 flex flex-wrap gap-2.5">
+          <span class="chip">LangChain</span><span class="chip">LangGraph</span><span class="chip">CrewAI</span><span class="chip">AutoGen</span><span class="chip">RAG Pipelines</span><span class="chip">Vector Databases</span><span class="chip">Prompt Engineering</span><span class="chip">Function Calling</span><span class="chip">MCP</span><span class="chip">Python</span><span class="chip">FastAPI</span><span class="chip">OpenAI &amp; Claude APIs</span><span class="chip">Hugging Face</span><span class="chip">Agent Evaluation</span><span class="chip">Docker</span><span class="chip">Streamlit</span><span class="chip">n8n Automation</span><span class="chip">LLM Fine-tuning</span>
+        </div>
+        <p class="mt-6 text-sm text-slate-500 leading-relaxed">Every skill is taught by building — you'll finish with working code, not just theory.</p>
+      </div>
+
+      <!-- Careers -->
+      <div class="reveal grad-border rounded-3xl p-7 sm:p-8" style="transition-delay:.12s">
+        <h3 class="text-white font-heading font-bold text-xl flex items-center gap-3">
+          <span class="w-9 h-9 rounded-lg bg-gradient-to-br from-cyan-500/40 to-violet-500/30 border border-white/10 grid place-items-center"><svg viewBox="0 0 24 24" class="w-4 h-4 text-cyan-300" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="8" width="14" height="11" rx="3"/><path d="M12 8V5M9.5 5h5"/><circle cx="9.5" cy="12.5" r="1" fill="currentColor" stroke="none"/><circle cx="14.5" cy="12.5" r="1" fill="currentColor" stroke="none"/><path d="M9.5 16h5"/></svg></span>
+          Career Opportunities After Training
+        </h3>
+        <div class="mt-5 divide-y divide-white/5">
+          <div class="flex items-center justify-between gap-3 py-3">
+            <div><p class="text-white font-medium text-sm">AI Agent Developer</p><p class="text-xs text-slate-500 mt-0.5">Build autonomous systems end-to-end</p></div>
+            <span class="text-sm font-semibold text-gradient-2 whitespace-nowrap">₹8–20 LPA</span>
+          </div>
+          <div class="flex items-center justify-between gap-3 py-3">
+            <div><p class="text-white font-medium text-sm">LLM Engineer</p><p class="text-xs text-slate-500 mt-0.5">Model integration &amp; optimization</p></div>
+            <span class="text-sm font-semibold text-gradient-2 whitespace-nowrap">₹12–28 LPA</span>
+          </div>
+          <div class="flex items-center justify-between gap-3 py-3">
+            <div><p class="text-white font-medium text-sm">AI Automation Specialist</p><p class="text-xs text-slate-500 mt-0.5">Automate ops with agents &amp; n8n</p></div>
+            <span class="text-sm font-semibold text-gradient-2 whitespace-nowrap">₹6–15 LPA</span>
+          </div>
+          <div class="flex items-center justify-between gap-3 py-3">
+            <div><p class="text-white font-medium text-sm">RAG / Vector Systems Developer</p><p class="text-xs text-slate-500 mt-0.5">Enterprise knowledge pipelines</p></div>
+            <span class="text-sm font-semibold text-gradient-2 whitespace-nowrap">₹10–22 LPA</span>
+          </div>
+          <div class="flex items-center justify-between gap-3 py-3">
+            <div><p class="text-white font-medium text-sm">Prompt &amp; AgentOps Engineer</p><p class="text-xs text-slate-500 mt-0.5">Evaluate &amp; operate agent fleets</p></div>
+            <span class="text-sm font-semibold text-gradient-2 whitespace-nowrap">₹6–14 LPA</span>
+          </div>
+          <div class="flex items-center justify-between gap-3 py-3">
+            <div><p class="text-white font-medium text-sm">AI Product Engineer</p><p class="text-xs text-slate-500 mt-0.5">Ship AI-native products fast</p></div>
+            <span class="text-sm font-semibold text-gradient-2 whitespace-nowrap">₹10–25 LPA</span>
+          </div>
+        </div>
+        <div class="mt-5 inline-flex items-center gap-2 text-xs font-semibold text-emerald-300 bg-emerald-400/10 border border-emerald-400/20 rounded-full px-4 py-2">
+          🔥 Agentic AI job postings growing 40%+ year-over-year
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY THINKNEXT ============ -->
+<section id="why" class="relative py-20 lg:py-28 scroll-mt-24 border-y border-white/5 bg-white/[.015]">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+    <div class="max-w-2xl mx-auto text-center reveal">
+      <p class="flex items-center justify-center gap-3 text-[11px] sm:text-xs font-semibold uppercase tracking-[.3em] text-violet-300">
+        <span class="w-8 h-px bg-violet-400/70"></span>The ThinkNEXT Advantage<span class="w-8 h-px bg-violet-400/70"></span>
+      </p>
+      <h2 class="mt-5 font-heading text-3xl sm:text-4xl lg:text-[2.75rem] font-bold text-white leading-tight tracking-tight">
+        Why Choose ThinkNEXT <span class="text-gradient">Technologies?</span>
+      </h2>
+      <p class="mt-5 text-slate-400 leading-relaxed">A trusted Agentic AI institute in Chandigarh with 15+ years of training excellence and a placement network of 500+ hiring partners.</p>
+    </div>
+
+    <div class="mt-14 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      <div class="reveal feature-card glass rounded-2xl p-6">
+        <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-violet-600/30 to-fuchsia-500/20 border border-white/10 grid place-items-center text-violet-300"><svg viewBox="0 0 24 24" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="5.5"/><path d="m8.5 12.8-1.3 8.2L12 18l4.8 3-1.3-8.2"/></svg></div>
+        <h3 class="mt-4 text-white font-semibold">15+ Years of Excellence</h3>
+        <p class="mt-2 text-sm text-slate-400 leading-relaxed">A proven institute in Chandigarh trusted by thousands of learners since 2009.</p>
+      </div>
+      <div class="reveal feature-card glass rounded-2xl p-6" style="transition-delay:.07s">
+        <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-violet-600/30 to-fuchsia-500/20 border border-white/10 grid place-items-center text-violet-300"><svg viewBox="0 0 24 24" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10 3v6L4.5 18a2.4 2.4 0 0 0 2.1 3.6h10.8a2.4 2.4 0 0 0 2.1-3.6L14 9V3"/><path d="M8.5 3h7M7 15h10"/></svg></div>
+        <h3 class="mt-4 text-white font-semibold">100% Practical Training</h3>
+        <p class="mt-2 text-sm text-slate-400 leading-relaxed">No passive slides. Every class is hands-on: code, build, break, rebuild.</p>
+      </div>
+      <div class="reveal feature-card glass rounded-2xl p-6" style="transition-delay:.14s">
+        <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-violet-600/30 to-fuchsia-500/20 border border-white/10 grid place-items-center text-violet-300"><svg viewBox="0 0 24 24" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M2.8 20c.5-3.4 3.1-5.5 6.2-5.5s5.7 2.1 6.2 5.5"/><circle cx="17.5" cy="9.5" r="2.6"/><path d="M16.2 14.6c2.8.2 4.6 2.1 5 5.4"/></svg></div>
+        <h3 class="mt-4 text-white font-semibold">Expert Industry Mentors</h3>
+        <p class="mt-2 text-sm text-slate-400 leading-relaxed">Learn from mentors who build real AI products and share production war stories.</p>
+      </div>
+      <div class="reveal feature-card glass rounded-2xl p-6">
+        <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-violet-600/30 to-fuchsia-500/20 border border-white/10 grid place-items-center text-violet-300"><svg viewBox="0 0 24 24" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="12" rx="2"/><path d="M9 8V6a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18"/></svg></div>
+        <h3 class="mt-4 text-white font-semibold">Placement Assistance</h3>
+        <p class="mt-2 text-sm text-slate-400 leading-relaxed">Resume design, mock interviews and referrals to 500+ hiring partners.</p>
+      </div>
+      <div class="reveal feature-card glass rounded-2xl p-6" style="transition-delay:.07s">
+        <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-violet-600/30 to-fuchsia-500/20 border border-white/10 grid place-items-center text-violet-300"><svg viewBox="0 0 24 24" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H8l-5 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+        <h3 class="mt-4 text-white font-semibold">Small Batches, 1-on-1 Mentoring</h3>
+        <p class="mt-2 text-sm text-slate-400 leading-relaxed">Limited seats per batch with dedicated doubt-clearing sessions.</p>
+      </div>
+      <div class="reveal feature-card glass rounded-2xl p-6" style="transition-delay:.14s">
+        <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-violet-600/30 to-fuchsia-500/20 border border-white/10 grid place-items-center text-violet-300"><svg viewBox="0 0 24 24" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg></div>
+        <h3 class="mt-4 text-white font-semibold">Recognized Certification</h3>
+        <p class="mt-2 text-sm text-slate-400 leading-relaxed">An industry-accepted certificate plus a portfolio of 20+ agent projects.</p>
+      </div>
+    </div>
+
+    <div class="reveal grad-border rounded-3xl mt-6 p-8 flex flex-col lg:flex-row items-center justify-between gap-6" style="transition-delay:.1s">
+      <div>
+        <h3 class="text-white font-heading font-bold text-xl">Still deciding? Talk to a course counselor — free.</h3>
+        <p class="mt-2 text-sm text-slate-400">Get batch details, fee structure, EMI options and a personalized learning plan in one call.</p>
+      </div>
+      <div class="flex flex-wrap gap-3 shrink-0">
+        <button class="js-enroll btn-primary text-white font-semibold px-6 py-3 rounded-xl text-sm" data-title="Talk to a Course Counselor">Enroll Now</button>
+        <a href="tel:+919876543210" class="btn-ghost inline-flex items-center gap-2 text-white font-semibold px-6 py-3 rounded-xl text-sm">
+          <svg viewBox="0 0 24 24" class="w-4 h-4 text-fuchsia-300" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2z"/></svg>
+          Talk to a Counselor
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section id="faq" class="relative py-20 lg:py-28 scroll-mt-24">
+  <div class="max-w-3xl mx-auto px-5 sm:px-8">
+    <div class="text-center reveal">
+      <p class="flex items-center justify-center gap-3 text-[11px] sm:text-xs font-semibold uppercase tracking-[.3em] text-violet-300">
+        <span class="w-8 h-px bg-violet-400/70"></span>FAQs<span class="w-8 h-px bg-violet-400/70"></span>
+      </p>
+      <h2 class="mt-5 font-heading text-3xl sm:text-4xl font-bold text-white leading-tight tracking-tight">
+        Frequently Asked Questions About the <span class="text-gradient">Agentic AI Course in Chandigarh</span>
+      </h2>
+    </div>
+    <div class="mt-12 space-y-4" data-acc-group>
+      <div class="acc-item glass rounded-2xl overflow-hidden reveal">
+        <button class="acc-head w-full flex items-center justify-between gap-4 p-5 text-left border-b border-white/5 transition-colors" data-acc aria-expanded="false">
+          <span class="text-white font-medium text-[15px]">Do I need coding experience to join this Agentic AI course?</span>
+          <span class="acc-icon w-8 h-8 shrink-0 grid place-items-center rounded-full border border-white/10 text-slate-300"><svg viewBox="0 0 24 24" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+        </button>
+        <div class="acc-body"><p class="p-5 text-sm text-slate-400 leading-relaxed">Not necessarily. Basic logical thinking is enough — Module 1 covers Python and API fundamentals from scratch before we touch agents, so beginners can follow comfortably.</p></div>
+      </div>
+      <div class="acc-item glass rounded-2xl overflow-hidden reveal" style="transition-delay:.05s">
+        <button class="acc-head w-full flex items-center justify-between gap-4 p-5 text-left border-b border-white/5 transition-colors" data-acc aria-expanded="false">
+          <span class="text-white font-medium text-[15px]">What is the duration and mode of the course?</span>
+          <span class="acc-icon w-8 h-8 shrink-0 grid place-items-center rounded-full border border-white/10 text-slate-300"><svg viewBox="0 0 24 24" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+        </button>
+        <div class="acc-body"><p class="p-5 text-sm text-slate-400 leading-relaxed">Around 6 months (19+ weeks) across 8 modules, available as weekday or weekend batches at our Chandigarh campus, with live online access for remote learners.</p></div>
+      </div>
+      <div class="acc-item glass rounded-2xl overflow-hidden reveal" style="transition-delay:.1s">
+        <button class="acc-head w-full flex items-center justify-between gap-4 p-5 text-left border-b border-white/5 transition-colors" data-acc aria-expanded="false">
+          <span class="text-white font-medium text-[15px]">Which tools will I learn in Agentic AI training?</span>
+          <span class="acc-icon w-8 h-8 shrink-0 grid place-items-center rounded-full border border-white/10 text-slate-300"><svg viewBox="0 0 24 24" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+        </button>
+        <div class="acc-body"><p class="p-5 text-sm text-slate-400 leading-relaxed">LangChain, LangGraph, CrewAI, AutoGen, OpenAI / Claude / Gemini APIs, Pinecone, ChromaDB, FAISS, FastAPI, Streamlit, Docker, n8n, MCP and more — the complete modern agent stack.</p></div>
+      </div>
+      <div class="acc-item glass rounded-2xl overflow-hidden reveal" style="transition-delay:.15s">
+        <button class="acc-head w-full flex items-center justify-between gap-4 p-5 text-left border-b border-white/5 transition-colors" data-acc aria-expanded="false">
+          <span class="text-white font-medium text-[15px]">Will I get a certificate after the Agentic AI course?</span>
+          <span class="acc-icon w-8 h-8 shrink-0 grid place-items-center rounded-full border border-white/10 text-slate-300"><svg viewBox="0 0 24 24" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+        </button>
+        <div class="acc-body"><p class="p-5 text-sm text-slate-400 leading-relaxed">Yes. You'll receive an industry-recognized certificate from ThinkNEXT Technologies plus a GitHub portfolio of 20+ real agent projects — which recruiters value even more.</p></div>
+      </div>
+      <div class="acc-item glass rounded-2xl overflow-hidden reveal" style="transition-delay:.2s">
+        <button class="acc-head w-full flex items-center justify-between gap-4 p-5 text-left border-b border-white/5 transition-colors" data-acc aria-expanded="false">
+          <span class="text-white font-medium text-[15px]">Do you provide placement assistance?</span>
+          <span class="acc-icon w-8 h-8 shrink-0 grid place-items-center rounded-full border border-white/10 text-slate-300"><svg viewBox="0 0 24 24" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+        </button>
+        <div class="acc-body"><p class="p-5 text-sm text-slate-400 leading-relaxed">Absolutely. We help with resume building, portfolio review, mock interviews and connect you with our network of 500+ hiring partners across India.</p></div>
+      </div>
+      <div class="acc-item glass rounded-2xl overflow-hidden reveal" style="transition-delay:.25s">
+        <button class="acc-head w-full flex items-center justify-between gap-4 p-5 text-left border-b border-white/5 transition-colors" data-acc aria-expanded="false">
+          <span class="text-white font-medium text-[15px]">Can working professionals join the course?</span>
+          <span class="acc-icon w-8 h-8 shrink-0 grid place-items-center rounded-full border border-white/10 text-slate-300"><svg viewBox="0 0 24 24" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+        </button>
+        <div class="acc-body"><p class="p-5 text-sm text-slate-400 leading-relaxed">Yes. Weekend batches, flexible timings and recorded sessions are designed specifically for working professionals who want to switch into AI.</p></div>
+      </div>
+      <div class="acc-item glass rounded-2xl overflow-hidden reveal" style="transition-delay:.3s">
+        <button class="acc-head w-full flex items-center justify-between gap-4 p-5 text-left border-b border-white/5 transition-colors" data-acc aria-expanded="false">
+          <span class="text-white font-medium text-[15px]">What jobs can I get after Agentic AI training?</span>
+          <span class="acc-icon w-8 h-8 shrink-0 grid place-items-center rounded-full border border-white/10 text-slate-300"><svg viewBox="0 0 24 24" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+        </button>
+        <div class="acc-body"><p class="p-5 text-sm text-slate-400 leading-relaxed">AI Agent Developer, LLM Engineer, RAG Developer, AI Automation Specialist, Prompt &amp; AgentOps Engineer and similar high-growth roles across product companies and startups.</p></div>
+      </div>
+      <div class="acc-item glass rounded-2xl overflow-hidden reveal" style="transition-delay:.35s">
+        <button class="acc-head w-full flex items-center justify-between gap-4 p-5 text-left border-b border-white/5 transition-colors" data-acc aria-expanded="false">
+          <span class="text-white font-medium text-[15px]">Are EMI or installment options available for fees?</span>
+          <span class="acc-icon w-8 h-8 shrink-0 grid place-items-center rounded-full border border-white/10 text-slate-300"><svg viewBox="0 0 24 24" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+        </button>
+        <div class="acc-body"><p class="p-5 text-sm text-slate-400 leading-relaxed">Yes, flexible installment plans are available. Talk to a course counselor for the latest fee structure, scholarships and ongoing offers.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA ============ -->
+<section id="start" class="relative py-20 lg:py-24 scroll-mt-24">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+    <div class="reveal relative rounded-[2rem] overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-br from-violet-950/80 via-[#0b0d1d] to-cyan-950/70"></div>
+      <div class="absolute inset-0 bg-grid opacity-60 [mask-image:radial-gradient(ellipse_60%_60%_at_50%_50%,#000_20%,transparent_75%)]"></div>
+      <div class="blob absolute -top-24 left-1/4 w-[380px] h-[380px] rounded-full bg-fuchsia-600/25"></div>
+      <div class="blob absolute -bottom-24 right-1/4 w-[380px] h-[380px] rounded-full bg-cyan-500/20"></div>
+
+      <div class="relative px-6 sm:px-14 py-16 lg:py-20 max-w-3xl mx-auto text-center">
+        <p class="flex items-center justify-center gap-3 text-[11px] sm:text-xs font-semibold uppercase tracking-[.3em] text-cyan-300">
+          <span class="w-8 h-px bg-cyan-400/70"></span>Start Today<span class="w-8 h-px bg-cyan-400/70"></span>
+        </p>
+        <h2 class="mt-5 font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight tracking-tight">
+          Start Your Agentic AI <span class="text-gradient">Learning Journey</span>
+        </h2>
+        <p class="mt-6 text-slate-300 leading-relaxed">
+          Ready to build practical skills in intelligent AI agents? Join <span class="text-white font-medium">Agentic AI Training at ThinkNEXT Technologies Private Limited</span> and explore AI agents, LLMs, RAG, automation, agentic AI tools and real-world projects through a structured learning program.
+        </p>
+        <p class="mt-4 text-slate-400 leading-relaxed">
+          Whether you want to <span class="text-white">learn Agentic AI</span>, develop practical <span class="text-white">Agentic AI skills</span> or explore an <span class="text-white">Agentic AI career</span>, this course helps you build a strong foundation in modern AI technologies and agent development.
+        </p>
+        <div class="mt-9 flex flex-wrap justify-center gap-4">
+          <button class="js-enroll btn-primary inline-flex items-center gap-2 text-white font-semibold px-8 py-4 rounded-xl text-[15px]" data-title="Enroll in the Agentic AI Course">
+            Enroll Now
+            <svg viewBox="0 0 24 24" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
+          <a href="tel:+919876543210" class="btn-ghost inline-flex items-center gap-2 text-white font-semibold px-8 py-4 rounded-xl text-[15px]">Talk to a Course Counselor</a>
+          <a href="#footer" class="btn-ghost inline-flex items-center gap-2 text-white font-semibold px-8 py-4 rounded-xl text-[15px]">Contact Us</a>
+        </div>
+        <p class="mt-8 font-mono text-xs text-slate-500">📞 +91 98765 43210 &nbsp;·&nbsp; ✉️ info@thinknext.co.in &nbsp;·&nbsp; 📍 Sector 34-A, Chandigarh</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer id="footer" class="relative border-t border-white/[.07] bg-[#04050c] pt-16 pb-8 overflow-hidden">
+  <div class="blob absolute -top-40 right-0 w-[400px] h-[400px] rounded-full bg-violet-800/15"></div>
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 relative">
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+      <div>
+        <a href="#top" class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-violet-600 via-fuchsia-500 to-cyan-400 grid place-items-center">
+            <svg viewBox="0 0 24 24" class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg>
+          </div>
+          <p class="font-heading font-bold text-white">ThinkNEXT <span class="text-gradient">Technologies</span></p>
+        </a>
+        <p class="mt-5 text-sm text-slate-400 leading-relaxed">ThinkNEXT Technologies Private Limited — Chandigarh's trusted institute for AI, software and industrial training since 2009. Building the next generation of AI engineers.</p>
+        <div class="mt-5 flex gap-3">
+          <a href="#" aria-label="LinkedIn" class="w-9 h-9 glass rounded-lg grid place-items-center text-slate-400 hover:text-white hover:border-violet-400/50 transition"><svg viewBox="0 0 24 24" class="w-4 h-4" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg></a>
+          <a href="#" aria-label="X" class="w-9 h-9 glass rounded-lg grid place-items-center text-slate-400 hover:text-white hover:border-violet-400/50 transition font-heading font-bold text-xs">X</a>
+          <a href="#" aria-label="YouTube" class="w-9 h-9 glass rounded-lg grid place-items-center text-slate-400 hover:text-white hover:border-violet-400/50 transition"><svg viewBox="0 0 24 24" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="2.5" y="6" width="19" height="12.5" rx="3.5"/><path d="m10.2 9.5 5 2.75-5 2.75z" fill="currentColor" stroke="none"/></svg></a>
+          <a href="#" aria-label="Instagram" class="w-9 h-9 glass rounded-lg grid place-items-center text-slate-400 hover:text-white hover:border-violet-400/50 transition"><svg viewBox="0 0 24 24" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold text-sm tracking-wide uppercase">Quick Links</h4>
+        <ul class="mt-5 space-y-3 text-sm text-slate-400">
+          <li><a href="#what" class="hover:text-violet-300 transition">What is Agentic AI?</a></li>
+          <li><a href="#learn" class="hover:text-violet-300 transition">What You'll Learn</a></li>
+          <li><a href="#curriculum" class="hover:text-violet-300 transition">Course Curriculum</a></li>
+          <li><a href="#tools" class="hover:text-violet-300 transition">Tools Covered</a></li>
+          <li><a href="#projects" class="hover:text-violet-300 transition">AI Agent Projects</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold text-sm tracking-wide uppercase">Course</h4>
+        <ul class="mt-5 space-y-3 text-sm text-slate-400">
+          <li><a href="#who" class="hover:text-violet-300 transition">Who Should Join</a></li>
+          <li><a href="#careers" class="hover:text-violet-300 transition">Skills &amp; Careers</a></li>
+          <li><a href="#why" class="hover:text-violet-300 transition">Why ThinkNEXT</a></li>
+          <li><a href="#faq" class="hover:text-violet-300 transition">FAQ</a></li>
+          <li><button class="js-enroll hover:text-violet-300 transition" data-title="Enroll in the Agentic AI Course">Enroll Now</button></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold text-sm tracking-wide uppercase">Contact Us</h4>
+        <ul class="mt-5 space-y-4 text-sm text-slate-400">
+          <li class="flex gap-3"><svg viewBox="0 0 24 24" class="w-4 h-4 mt-0.5 shrink-0 text-fuchsia-300" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.8-7-11a7 7 0 0 1 14 0c0 5.2-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>SCO 114-115, Sector 34-A, Chandigarh, 160022</li>
+          <li class="flex gap-3"><svg viewBox="0 0 24 24" class="w-4 h-4 mt-0.5 shrink-0 text-fuchsia-300" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+919876543210" class="hover:text-violet-300 transition">+91 98765 43210</a></li>
+          <li class="flex gap-3"><svg viewBox="0 0 24 24" class="w-4 h-4 mt-0.5 shrink-0 text-fuchsia-300" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:info@thinknext.co.in" class="hover:text-violet-300 transition">info@thinknext.co.in</a></li>
+          <li class="flex gap-3"><svg viewBox="0 0 24 24" class="w-4 h-4 mt-0.5 shrink-0 text-fuchsia-300" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Mon–Sat · 9:00 AM – 7:00 PM</li>
+        </ul>
+      </div>
+    </div>
+    <div class="mt-14 pt-7 border-t border-white/[.07] flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+      <p>© 2025 ThinkNEXT Technologies Private Limited. All rights reserved.</p>
+      <div class="flex gap-5"><a href="#" class="hover:text-slate-300 transition">Privacy Policy</a><a href="#" class="hover:text-slate-300 transition">Terms &amp; Conditions</a></div>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/919876543210" target="_blank" rel="noopener" aria-label="Chat on WhatsApp" class="wa-ping fixed bottom-5 right-5 z-[75] w-14 h-14 rounded-full grid place-items-center bg-gradient-to-br from-emerald-400 to-green-600 shadow-2xl shadow-emerald-950/50 hover:scale-110 transition-transform">
+  <svg viewBox="0 0 24 24" class="w-7 h-7 text-white relative" fill="currentColor"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.4-1.48-.88-.78-1.48-1.76-1.65-2.05-.17-.3-.02-.46.13-.61.13-.13.35-.35.52-.52.17-.17.23-.3.35-.5.11-.2.06-.37-.03-.52-.09-.15-.66-1.6-.91-2.18-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.87 1.22 3.07.15.2 2.1 3.2 5.08 4.49.7.3 1.26.49 1.69.62.71.23 1.36.2 1.88.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.18-1.42-.08-.12-.28-.2-.57-.34zM20.5 3.5A11.8 11.8 0 0 0 12.05 0C5.46 0 .1 5.33.1 11.9c0 2.1.55 4.14 1.6 5.95L0 24l6.34-1.65a11.9 11.9 0 0 0 5.7 1.44h.01c6.59 0 11.95-5.34 11.95-11.9 0-3.18-1.24-6.17-3.5-8.4z"/></svg>
+</a>
+
+<!-- Enroll Modal -->
+<div id="enrollModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="absolute inset-0 bg-black/75 backdrop-blur-sm" data-close></div>
+  <div class="modal-panel grad-border rounded-3xl p-7 sm:p-8 relative">
+    <button data-close aria-label="Close" class="absolute top-4 right-4 w-9 h-9 grid place-items-center rounded-lg text-slate-400 hover:text-white hover:bg-white/5 transition">
+      <svg viewBox="0 0 24 24" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>
+    </button>
+    <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-violet-600 via-fuchsia-500 to-cyan-400 grid place-items-center shadow-lg shadow-fuchsia-900/40">
+      <svg viewBox="0 0 24 24" class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.8 4.9L19 9.7l-5.2 1.8L12 16.4l-1.8-4.9L5 9.7l5.2-1.8L12 3z"/></svg>
+    </div>
+    <h3 id="modalTitle" class="mt-5 font-heading text-xl font-bold text-white">Enroll in the Agentic AI Course</h3>
+    <p class="mt-2 text-sm text-slate-400 leading-relaxed">Share your details — our course counselor will call you within 24 hours with batch details, fee structure &amp; EMI options.</p>
+    <form id="enrollForm" class="mt-6 space-y-4">
+      <input type="text" required placeholder="Full Name" class="field"/>
+      <input type="tel" required placeholder="Phone Number" pattern="[0-9+ -]{10,15}" class="field"/>
+      <input type="email" required placeholder="Email Address" class="field"/>
+      <select class="field" required>
+        <option value="" disabled selected>Preferred Batch Mode</option>
+        <option>Weekday Batch (Chandigarh Campus)</option>
+        <option>Weekend Batch (Chandigarh Campus)</option>
+        <option>Live Online</option>
+        <option>Not sure — help me decide</option>
+      </select>
+      <button type="submit" class="btn-primary w-full text-white font-semibold py-3.5 rounded-xl text-[15px]">Request a Callback</button>
+      <p class="text-center text-[11px] text-slate-500">🔒 Your details are safe with us. 100% spam-free.</p>
+    </form>
+    <div id="formSuccess" class="hidden text-center py-6">
+      <div class="w-16 h-16 mx-auto rounded-full bg-emerald-400/15 border border-emerald-400/30 grid place-items-center">
+        <svg viewBox="0 0 24 24" class="w-8 h-8 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg>
+      </div>
+      <h4 class="mt-4 font-heading text-lg font-bold text-white">Request Received!</h4>
+      <p class="mt-2 text-sm text-slate-400 leading-relaxed">Thanks — a ThinkNEXT course counselor will reach out shortly. Keep an eye on WhatsApp for a quick confirmation.</p>
+      <button data-close class="btn-ghost mt-6 text-white font-semibold px-6 py-2.5 rounded-xl text-sm">Close</button>
+    </div>
+  </div>
+</div>
+
+<script>
+const $ = (s, c=document) => c.querySelector(s);
+const $$ = (s, c=document) => [...c.querySelectorAll(s)];
+const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/* ---------- Navbar + progress bar ---------- */
+const nav = $('#navbar'), progress = $('#progress');
+const onScroll = () => {
+  nav.classList.toggle('scrolled', scrollY > 24);
+  const h = document.documentElement;
+  progress.style.width = (h.scrollTop / (h.scrollHeight - h.clientHeight) * 100) + '%';
+};
+addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+/* ---------- Mobile menu ---------- */
+const burger = $('#burger'), mobileMenu = $('#mobileMenu');
+burger.addEventListener('click', () => {
+  const open = mobileMenu.classList.toggle('open');
+  burger.classList.toggle('active', open);
+  burger.setAttribute('aria-expanded', open);
+});
+$$('#mobileMenu a, #mobileMenu button').forEach(a => a.addEventListener('click', () => {
+  mobileMenu.classList.remove('open'); burger.classList.remove('active');
+  burger.setAttribute('aria-expanded', 'false');
+}));
+
+/* ---------- Scroll reveal ---------- */
+const io = new IntersectionObserver(es => es.forEach(e => {
+  if (e.isIntersecting) { e.target.classList.add('in-view'); io.unobserve(e.target); }
+}), { threshold: .12, rootMargin: '0px 0px -40px 0px' });
+$$('.reveal').forEach(el => io.observe(el));
+
+/* ---------- Animated counters ---------- */
+const cio = new IntersectionObserver(es => es.forEach(e => {
+  if (!e.isIntersecting) return;
+  const el = e.target; cio.unobserve(el);
+  const target = parseFloat(el.dataset.target), dec = parseInt(el.dataset.decimals || 0);
+  const dur = 1600, t0 = performance.now();
+  const tick = t => {
+    const p = Math.min((t - t0) / dur, 1);
+    el.textContent = (target * (1 - Math.pow(1 - p, 3))).toFixed(dec);
+    if (p < 1) requestAnimationFrame(tick); else el.textContent = target.toFixed(dec);
+  };
+  requestAnimationFrame(tick);
+}), { threshold: .5 });
+$$('.counter').forEach(el => cio.observe(el));
+
+/* ---------- Accordions ---------- */
+$$('[data-acc]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const item = btn.closest('.acc-item');
+    const open = item.classList.contains('open');
+    item.closest('[data-acc-group]').querySelectorAll('.acc-item.open').forEach(o => {
+      if (o !== item) {
+        o.classList.remove('open');
+        o.querySelector('.acc-body').style.maxHeight = null;
+        o.querySelector('[data-acc]').setAttribute('aria-expanded', 'false');
+      }
+    });
+    item.classList.toggle('open', !open);
+    btn.setAttribute('aria-expanded', String(!open));
+    const body = item.querySelector('.acc-body');
+    body.style.maxHeight = !open ? body.scrollHeight + 'px' : null;
+  });
+});
+$$('.acc-item.open .acc-body').forEach(b => { b.style.maxHeight = b.scrollHeight + 'px'; });
+
+/* ---------- Countdown ---------- */
+const cdEl = $('#countdown');
+const batchTarget = Date.now() + 13 * 86400000 + 2 * 3600000 + 41 * 60000;
+const cdTick = () => {
+  let d = Math.max(0, batchTarget - Date.now());
+  const days = Math.floor(d / 86400000); d %= 86400000;
+  const h = Math.floor(d / 3600000); d %= 36000000;
+  const m = Math.floor(d / 60000); d %= 60000;
+  const s = Math.floor(d / 1000);
+  cdEl.textContent = `${days}d ${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
+};
+cdTick(); setInterval(cdTick, 1000);
+
+/* ---------- Marquee duplication (seamless loop) ---------- */
+$$('.marquee-track').forEach(t => {
+  const clone = t.firstElementChild.cloneNode(true);
+  clone.setAttribute('aria-hidden', 'true');
+  t.appendChild(clone);
+});
+
+/* ---------- Terminal typewriter ---------- */
+const term = $('#term');
+const lines = [
+  { t: '$ thinknext-agent run --goal "competitor research"', c: 'text-violet-300' },
+  { t: '▸ Initializing agent runtime …', c: 'text-slate-400' },
+  { t: '▸ Reasoning · decomposing goal into subtasks', c: 'text-slate-300' },
+  { t: '   ├─ search competitor pricing', c: 'text-slate-500' },
+  { t: '   ├─ summarize findings with LLM', c: 'text-slate-500' },
+  { t: '   └─ draft final report', c: 'text-slate-500' },
+  { t: '▸ Acting · web_search("agentic-ai courses 2025")', c: 'text-cyan-300' },
+  { t: '▸ Observing · 14 sources · 96% relevance', c: 'text-slate-300' },
+  { t: '▸ Reflecting · plan confidence 0.94 → proceed', c: 'text-slate-300' },
+  { t: '✔ Goal achieved — report.pdf delivered', c: 'text-emerald-400 font-semibold' },
+  { t: '— session complete · replaying —', c: 'text-slate-600' }
+];
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+async function typeLine(line) {
+  const div = document.createElement('div');
+  div.className = line.c;
+  term.appendChild(div);
+  for (const ch of line.t) { div.textContent += ch; await sleep(11 + Math.random() * 16); }
+}
+(async function runTerm() {
+  if (reduced) {
+    lines.forEach(l => { const d = document.createElement('div'); d.className = l.c; d.textContent = l.t; term.appendChild(d); });
+    return;
+  }
+  while (true) {
+    term.innerHTML = '';
+    for (const l of lines) { await typeLine(l); await sleep(230); }
+    await sleep(2400);
+  }
+})();
+
+/* ---------- Hero neural-network canvas ---------- */
+const canvas = $('#net'), ctx = canvas.getContext('2d');
+let W, H, nodes = [], N = 70, raf, running = false;
+function seed() {
+  nodes = Array.from({ length: N }, () => ({
+    x: Math.random() * W, y: Math.random() * H,
+    vx: (Math.random() - .5) * .38, vy: (Math.random() - .5) * .38,
+    r: Math.random() * 1.5 + .6
+  }));
+}
+function resize() {
+  W = canvas.width = canvas.offsetWidth; H = canvas.height = canvas.offsetHeight;
+  N = W < 640 ? 32 : 70; seed();
+}
+function draw() {
+  ctx.clearRect(0, 0, W, H);
+  ctx.lineWidth = 1;
+  for (const n of nodes) {
+    n.x += n.vx; n.y += n.vy;
+    if (n.x < 0 || n.x > W) n.vx *= -1;
+    if (n.y < 0 || n.y > H) n.vy *= -1;
+  }
+  for (let i = 0; i < nodes.length; i++) {
+    for (let j = i + 1; j < nodes.length; j++) {
+      const dx = nodes[i].x - nodes[j].x, dy = nodes[i].y - nodes[j].y, d2 = dx * dx + dy * dy;
+      if (d2 < 14400) {
+        ctx.strokeStyle = `rgba(139,110,246,${(1 - Math.sqrt(d2) / 120) * .45})`;
+        ctx.beginPath(); ctx.moveTo(nodes[i].x, nodes[i].y); ctx.lineTo(nodes[j].x, nodes[j].y); ctx.stroke();
+      }
+    }
+  }
+  for (const n of nodes) {
+    ctx.fillStyle = 'rgba(196,181,253,.7)';
+    ctx.beginPath(); ctx.arc(n.x, n.y, n.r, 0, Math.PI * 2); ctx.fill();
+  }
+}
+function loop() {
+  if (running) return; running = true;
+  const step = () => { draw(); raf = requestAnimationFrame(step); };
+  raf = requestAnimationFrame(step);
+}
+function stop() { running = false; cancelAnimationFrame(raf); }
+resize(); addEventListener('resize', resize);
+if (!reduced) loop(); else draw();
+document.addEventListener('visibilitychange', () => {
+  if (document.hidden) stop();
+  else if (!reduced) loop();
+});
+
+/* ---------- Enroll modal ---------- */
+const modal = $('#enrollModal'), modalTitle = $('#modalTitle');
+const form = $('#enrollForm'), success = $('#formSuccess');
+function openModal(title) {
+  modalTitle.textContent = title || 'Enroll in the Agentic AI Course';
+  modal.classList.add('show');
+  document.body.style.overflow = 'hidden';
+}
+function closeModal() {
+  modal.classList.remove('show');
+  document.body.style.overflow = '';
+  setTimeout(() => { success.classList.add('hidden'); form.classList.remove('hidden'); form.reset(); }, 350);
+}
+$$('.js-enroll').forEach(b => b.addEventListener('click', e => {
+  e.preventDefault();
+  openModal(b.dataset.title);
+}));
+$$('[data-close]').forEach(b => b.addEventListener('click', closeModal));
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+form.addEventListener('submit', e => {
+  e.preventDefault();
+  form.classList.add('hidden');
+  success.classList.remove('hidden');
+});
+</script>
+</body>
+</html>
